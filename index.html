@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Dev Lukinha</title>
+  <link rel="stylesheet" href="./src/css/output.css">
+</head>
+<body>
+
+  <header class="bg-[url(/assets/fundo-portfolio.jpg)] h-[400px] bg-no-repeat bg-cover relative">
+    <div class="flex flex-row-reverse">
+      <button id="openMenu">
+        <i class="fa-solid fa-bars text-white text-3xl mt-5 mr-5"></i>
+      </button>
+
+      <nav class="text-white bg-black opacity-80 flex flex-col  transition-all duration-700 z-10 h-[100vh] fixed top-0 right-[-100%] w-[60vw]" id="menu">
+
+        <button id="closeMenu">
+          <i class="fa-solid fa-xmark text-white text-3xl mt-5 mr-36"></i>
+        </button>
+
+        <ul class="flex flex-col justify-center ml-5 gap-10 mt-10 text-xl w-full">
+          <li class="bg-amber-400 w-full">
+            <i class="fa-brands fa-react mr-1"></i>
+            <a href="#" class="w-full ">Tecnologias</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-file mr-1"></i>
+             <a href="#">Projetos</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-circle-info mr-1"></i>
+            <a href="#">Sobre</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-phone mr-1"></i>
+            <a href="#">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous"></script>
+  <script src="./src/js/menu.js"></script>
+</body>
+</html>
