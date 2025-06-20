@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,41 +8,83 @@
 </head>
 <body>
 
-  <header class="bg-[url(/assets/fundo-portfolio.jpg)] h-[400px] bg-no-repeat bg-cover relative">
-    <div class="flex flex-row-reverse">
-      <button id="openMenu">
+  <header class="flex flex-col gap-30">
+
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-[500px] object-cover z-0 lg:h-[600px]">
+      <source src="./assets/video-bg-portfolio.mp4">
+    </video>
+
+    <!--Menu desktop-->
+    <div class="hidden lg:flex flex-row relative z-10">
+      <nav class="w-full">
+        <ul class="flex flex-row justify-end gap-10 mt-10 mr-20 text-xl text-white font-medium">
+          <li>
+            <a href="#" class="border-b-3 border-ttblue  transition  menu-item">Tecnologias</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">Projetos</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">Sobre</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class=" w-full flex justify-end relative z-10 lg:hidden ">
+        <button id="openMenu" class="lg:hidden">
         <i class="fa-solid fa-bars text-white text-3xl mt-5 mr-5"></i>
       </button>
+    </div>
+    <!--Menu desktop-->
 
+    <div class="flex flex-col w-full justify-center items-center gap-10 text-white relative z-10">
+      <h2 class=" text-2xl font-semibold">Lucas Henrique</h2>
+      <div class="flex gap-2">
+        <h1 class="text-2xl font-bold md:text-5xl">DESENVOLVEDOR</h1>
+        <h1 class="text-2xl text-ttblue font-bold md:text-5xl">FRONT END</h1>
+      </div>
+      
+     
+      <button class="bg-ttblue w-44 p-1 rounded-md hover:bg-blue-950 transition duration-500">
+        <a href="">Entre em Contato</a>
+      </button>
+    </div>
+
+    <!--Menu mobile-->
+    <div class="flex flex-row-reverse relative z-10">
       <nav class="text-white bg-black opacity-80 flex flex-col  transition-all duration-700 z-10 h-[100vh] fixed top-0 right-[-100%] w-[60vw]" id="menu">
 
         <button id="closeMenu">
-          <i class="fa-solid fa-xmark text-white text-3xl mt-5 mr-36"></i>
+          <i class="fa-solid fa-xmark  text-white text-3xl mt-5 mr-36 hover:text-blue-600 md:mr-[400px]"></i>
         </button>
 
-        <ul class="flex flex-col justify-center ml-5 gap-10 mt-10 text-xl w-full">
-          <li class="bg-amber-400 w-full">
-            <i class="fa-brands fa-react mr-1"></i>
+        <ul class="flex flex-col justify-center  gap-5 mt-10 text-xl w-full">
+          <li class="p-2 hover:bg-blue-600 transition-all duration-300">
+            <i class="fa-brands fa-react mr-1 ml-3"></i>
             <a href="#" class="w-full ">Tecnologias</a>
           </li>
 
-          <li>
-            <i class="fa-solid fa-file mr-1"></i>
+          <li class="p-2 hover:bg-blue-600 transition-all duration-300">
+            <i class="fa-solid fa-file mr-1 ml-3"></i>
              <a href="#">Projetos</a>
           </li>
 
-          <li>
-            <i class="fa-solid fa-circle-info mr-1"></i>
+          <li class="p-2 hover:bg-blue-600 transition-all duration-300">
+            <i class="fa-solid fa-circle-info mr-1 ml-3"></i>
             <a href="#">Sobre</a>
           </li>
 
-          <li>
-            <i class="fa-solid fa-phone mr-1"></i>
+          <li class="p-2 hover:bg-blue-600 transition-all duration-300">
+            <i class="fa-solid fa-phone mr-1 ml-3"></i>
             <a href="#">Contato</a>
           </li>
         </ul>
       </nav>
     </div>
+    <!--Menu mobile-->
   </header>
 
   <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous"></script>
