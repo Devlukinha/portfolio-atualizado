@@ -6,11 +6,11 @@
   <title>Portfólio Dev Lukinha</title>
   <link rel="stylesheet" href="./src/css/output.css">
 </head>
-<body>
+<body class="scroll-smooth">
 
-  <header class="flex flex-col gap-30">
+  <header class="flex flex-col lg:gap-10  gap-20"> <!--Inicio da home-->
 
-    <video autoplay muted loop class="absolute top-0 left-0 w-full h-[500px] object-cover z-0 lg:h-[600px]">
+    <video autoplay muted loop class="absolute top-0 left-0 w-full h-full object-cover z-0 ">
       <source src="./assets/video-bg-portfolio.mp4">
     </video>
 
@@ -25,7 +25,7 @@
             <a href="#" class="menu-item">Projetos</a>
           </li>
           <li>
-            <a href="#" class="menu-item">Sobre</a>
+            <a href="#sobreMim" class="menu-item">Sobre</a>
           </li>
           <li>
             <a href="#" class="menu-item">Contato</a>
@@ -40,22 +40,27 @@
     </div>
     <!--Menu desktop-->
 
-    <div class="flex flex-col w-full justify-center items-center gap-10 text-white relative z-10">
-      <h2 class=" text-2xl font-semibold">Lucas Henrique</h2>
-      <div class="flex gap-2">
-        <h1 class="text-2xl font-bold md:text-5xl">DESENVOLVEDOR</h1>
-        <h1 class="text-2xl text-ttblue font-bold md:text-5xl">FRONT END</h1>
+    <div class="flex flex-col w-full justify-center items-center gap-10 text-white relative z-10 lg:mt-40">
+      <h2 class=" text-xl font-semibold text-center lg:text-2xl lg:font-semibold hidden lg:flex">Olá, me chamo Lucas Henrique e sou</h2>
+
+      <!--Titulo para o mobile-->
+      <h2 class=" text-xl font-semibold text-center lg:text-2xl lg:font-semibold lg:hidden">Olá, me chamo Lucas Henrique <br> e sou</h2>
+      <div class="flex flex-col text-center lg:flex-row lg:gap-5">
+        <h1 class="text-4xl font-bold  md:text-5xl lg:text-7xl">DESENVOLVEDOR</h1>
+        <h1 class="text-4xl text-ttblue font-bold text-shadow-white md:text-5xl lg:text-7xl">FULL STACK</h1>
       </div>
       
-     
-      <button class="bg-ttblue w-44 p-1 rounded-md hover:bg-blue-950 transition duration-500">
+      <p class="text-xl text-justify w-[300px] lg:text-3xl lg:text-center lg:w-full">
+        Seja bem-vindo! Aqui você vai encontrar projetos digitais criados com foco em estética, funcionalidade e resultados reais. Meu objetivo é transformar ideias em experiências que geram impacto e valor para quem acessa.
+      </p>
+      <button class="bg-ttblue lg:text-xl font-medium w-56 lg:w-64 lg:p-4 p-2 rounded-md hover:bg-blue-950 transition duration-500 mt-10">
         <a href="">Entre em Contato</a>
       </button>
     </div>
 
     <!--Menu mobile-->
     <div class="flex flex-row-reverse relative z-10">
-      <nav class="text-white bg-black opacity-80 flex flex-col  transition-all duration-700 z-10 h-[100vh] fixed top-0 right-[-100%] w-[60vw]" id="menu">
+      <nav class="text-white bg-black opacity-90 flex flex-col  transition-all duration-700 z-10 h-[100vh] fixed top-0 right-[-100%] w-[60vw]" id="menu">
 
         <button id="closeMenu">
           <i class="fa-solid fa-xmark  text-white text-3xl mt-5 mr-36 hover:text-blue-600 md:mr-[400px]"></i>
@@ -85,7 +90,40 @@
       </nav>
     </div>
     <!--Menu mobile-->
-  </header>
+  </header><!--fim da home-->
+
+  <main class=" lg:mt-90 "><!--corpo da pagina-->
+    <div class="sessao-sobre-mim  flex flex-col lg:flex-row justify-center h-[900px] items-center lg:gap-30" id="sobreMim">
+      <div class="foto-perfil flex flex-col gap-5">
+        <h2 class="text-4xl text-ttblue font-bold mt-10 text-shadow-white md:text-5xl lg:text-7xl lg:hidden">SOBRE MIM</h2>
+        <img src="assets/foto-perfil.jpg" alt="foto-de-perfil" class="rounded-md w-[200px] lg:w-[400px] lg:rounded-2xl">
+      </div>
+      <div>
+        <h2 class="text-4xl text-ttblue font-bold text-shadow-white hidden md:text-5xl lg:text-7xl lg:flex">SOBRE MIM</h2>
+        <p class="text-xl lg:text-2xl font-normal text-justify w-[320px] lg:w-[700px] mt-10">
+          Me chamo Lucas Henrique, sou um jovem de 18 anos apaixonado 
+          por tecnologia e carros. Estou no meu ultimo ano do curso técnico em informática no IFTM, onde eu também atuo como monitor de programação e participo de um projeto de desenvolvimento chamado Farmando XP. Tenho conhecimento sólido em desenvolvimento front end e design, estou começando a me aventurar no desenvolvimento back end e na segurança da informação. Além de programar, nas horas livres gosto de jogar jogos, desenhar e praticar algum esporte.
+        </p>
+
+        <div class="botoes flex flex-row gap-6 mt-8 mb-20">
+          <button class="bg-ttblue text-white w-12 h-10 lg:w-24 lg:h-12 rounded-md hover:bg-blue-950 transition duration-500 cursor-pointer">
+            <a href=""><i class="fa-brands fa-github text-xl lg:text-3xl"></i></a>
+          </button>
+
+          <button class="bg-ttblue text-white w-12 h-10 lg:w-24 lg:h-12 rounded-md hover:bg-blue-950 transition duration-500 cursor-pointer">
+            <a href=""><i class="fa-brands fa-linkedin text-xl lg:text-3xl"></i></a>
+          </button>
+
+          <button class="bg-ttblue text-white w-12 h-10 lg:w-24 lg:h-12 rounded-md hover:bg-blue-950 transition duration-500 cursor-pointer">
+            <a href=""><i class="fa-brands fa-instagram text-xl lg:text-3xl"></i></a>
+          </button>
+          <button class="bg-ttblue text-white w-26 h-10 lg:w-24 lg:h-12 rounded-md hover:bg-blue-950 transition duration-500 cursor-pointer">
+            <a href=""><i class="fa-solid fa-file text-xl lg:text-3xl"></i></a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous"></script>
   <script src="./src/js/menu.js"></script>
