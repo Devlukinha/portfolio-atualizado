@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Dev Lukinha</title>
   <link rel="stylesheet" href="./src/css/output.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body class="scroll-smooth">
 
@@ -41,19 +42,19 @@
     <!--Menu desktop-->
 
     <div class="flex flex-col w-full justify-center items-center gap-10 text-white relative z-10 lg:mt-40">
-      <h2 class=" text-xl font-semibold text-center lg:text-2xl lg:font-semibold hidden lg:flex">Olá, me chamo Lucas Henrique e sou</h2>
+      <h2 class=" text-xl font-semibold text-center lg:text-2xl lg:font-semibold hidden lg:flex frase-desktop">Olá, me chamo Lucas Henrique e sou</h2>
 
       <!--Titulo para o mobile-->
       <h2 class=" text-xl font-semibold text-center lg:text-2xl lg:font-semibold lg:hidden">Olá, me chamo Lucas Henrique <br> e sou</h2>
-      <div class="flex flex-col text-center lg:flex-row lg:gap-5">
-        <h1 class="text-4xl font-bold  md:text-5xl lg:text-5xl xl:text-7xl">DESENVOLVEDOR</h1>
-        <h1 class="text-4xl text-ttblue font-bold text-shadow-white md:text-5xl lg:text-5xl xl:text-7xl">FULL STACK</h1>
+      <div class="flex flex-col text-center lg:flex-row lg:gap-5 title">
+        <h1 class="text-4xl font-bold  md:text-5xl lg:text-5xl xl:text-7xl title-1">DESENVOLVEDOR</h1>
+        <h1 class="text-4xl text-ttblue font-bold text-shadow-white md:text-5xl lg:text-5xl xl:text-7xl title-2">FULL STACK</h1>
       </div>
       
-      <p class="text-xl text-justify w-[300px] lg:text-3xl lg:text-center lg:w-[1500px] md:w-[500px] md:text-center">
+      <p class="text-xl text-justify w-[300px] lg:text-3xl lg:text-center lg:w-[1500px] md:w-[500px] md:text-center paragrafo-inicial">
         Seja bem-vindo! Aqui você vai encontrar projetos digitais criados com foco em estética, funcionalidade e resultados reais. Meu objetivo é transformar ideias em experiências que geram impacto e valor para quem acessa.
       </p>
-      <button class="bg-ttblue lg:text-xl font-medium w-56 lg:w-52 lg:p-3 md:w-52 md:p-3 xl:w-60 xl:p-4 p-2 rounded-md hover:scale-95 hover:bg-blue-950 transition duration-500 lg:mt-10">
+      <button class="bg-ttblue lg:text-xl font-medium w-56 lg:w-52 lg:p-3 md:w-52 md:p-3 xl:w-60 xl:p-4 p-2 rounded-md hover:scale-95 hover:bg-blue-950 transition duration-500 lg:mt-10 btn-contato">
         <a href="">Entre em Contato</a>
       </button>
     </div>
@@ -94,14 +95,14 @@
 
   <main class=" lg:mt-20 md:mt-10 flex flex-col gap-10"><!--corpo da pagina-->
 
-    <div class="sessao-sobre-mim  flex flex-col lg:flex-row justify-center h-[900px] items-center lg:gap-30 lg:mt-10 lg:mb-0 mb-35" id="sobreMim">
+    <section class="sessao-sobre-mim  flex flex-col lg:flex-row justify-center h-[900px] items-center lg:gap-30 lg:mt-10 lg:mb-0 mb-35" id="sobreMim">
       <div class="foto-perfil flex flex-col md:justify-center md:items-center gap-5">
         <h2 class="text-4xl text-ttblue font-bold mt-60 text-shadow-white md:text-5xl lg:text-5xl lg:hidden ">SOBRE MIM</h2>
-        <img src="assets/foto-perfil.jpg" alt="foto-de-perfil" class="rounded-md w-[200px] lg:w-[300px] lg:rounded-2xl md:w-[280px] xl:w-[400px]">
+        <img src="assets/foto-perfil.jpg" alt="foto-de-perfil" class="rounded-md w-[200px] lg:w-[300px] lg:rounded-2xl md:w-[280px] xl:w-[400px] foto-perfil">
       </div>
       <div>
-        <h2 class="text-4xl text-ttblue font-bold text-shadow-white hidden md:text-5xl xl:text-6xl lg:text-5xl lg:flex ">SOBRE MIM</h2>
-        <p class="text-xl  font-normal text-justify w-[320px] lg:w-[400px] md:w-[500px] xl:w-[700px] xl:text-2xl mt-10">
+        <h2 class="text-4xl text-ttblue font-bold text-shadow-white hidden md:text-5xl xl:text-6xl lg:text-5xl lg:flex title-sobre">SOBRE MIM</h2>
+        <p class="text-xl  font-normal text-justify w-[320px] lg:w-[400px] md:w-[500px] xl:w-[700px] xl:text-2xl mt-10 paragrafo-sobre">
           Me chamo Lucas Henrique, sou um jovem de 18 anos apaixonado 
           por tecnologia e carros. Estou no meu último ano do curso técnico em informática no IFTM, onde eu também atuo como monitor de programação e participo de um projeto de desenvolvimento chamado Farmando XP. Tenho conhecimento sólido em desenvolvimento front end e design, estou começando a me aventurar no desenvolvimento back end e na segurança da informação. Além de programar, nas horas livres gosto de jogar jogos, desenhar e praticar algum esporte.
         </p>
@@ -123,49 +124,49 @@
           </button>
         </div>
       </div>
-    </div>
+    </section>
 
     <!--Secao das skiils-->
     <section class="secao-skills bg-dark-blue lg:h-[1850px] h-[1250px]" id="tecnologias">
-      <h1 class="lg:text-6xl text-4xl font-bold text-white lg:mt-40 mt-20 text-center">SKILLS & TOOLS</h1>
+      <h1 class="lg:text-6xl text-4xl font-bold text-white lg:mt-40 mt-20 text-center title-skills">SKILLS & TOOLS</h1>
 
       <div class="front-end flex flex-col justify-center items-center max-w[900px]">
-        <h2 class="lg:text-5xl text-3xl font-medium text-white lg:mt-30 mt-13 ">Front End</h2>
+        <h2 class="lg:text-5xl text-3xl font-medium text-white lg:mt-30 mt-13 title-front">Front End</h2>
         <div class="bg-white h-[0.3px] lg:w-[900px] w-[350px] mt-2 lg:mb-20 mb-10"></div>
         
-        <ul class="flex flex-wrap justify-center items-center lg:gap-10 lg:mb-10 gap-3">
+        <ul class="flex flex-wrap justify-center items-center lg:gap-10 lg:mb-10 gap-3 cards-lg">
 
-          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-orange-400 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-orange-400">
+          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-orange-400 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-orange-400 card-lg">
             <i class="fa-brands fa-html5 lg:text-8xl text-4xl text-orange-400"></i>
             <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">HTML</p>
           </li>
 
-          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-600">
+          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-600 card-lg">
             <i class="fa-brands fa-css3-alt lg:text-8xl text-4xl text-blue-600"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">CSS</p>
           </li>
 
-          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-yellow-300 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-yellow-300">
+          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-yellow-300 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-yellow-300 card-lg">
             <i class="fa-brands fa-js lg:text-8xl text-4xl text-yellow-300"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">JAVASCRIPT</p>
           </li>
 
-          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-pink-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-pink-500">
+          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-pink-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-pink-500 card-lg">
             <i class="fa-brands fa-sass lg:text-8xl text-4xl text-pink-500"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">SASS</p>
           </li>
       
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-violet-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-violet-600">
-            <i class="fa-brands fa-bootstrap lg:text-8xl text-4xl text-violet-600"></i>
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-violet-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-violet-600 card-lg">
+            <i class="fa-brands fa-bootstrap lg:text-8xl text-4xl text-violet-600 "></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">BOOSTRAP</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright-secundary rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright-secundary">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright-secundary rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright-secundary card-lg">
             <img src="assets/Tailwind_CSS_Logo.svg (1).png" alt="" class="lg:w-[100px] w-[50px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">TAILWIND</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright lg:ml-0 ml-3">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright lg:ml-0 ml-3 card-lg">
             <i class="fa-brands fa-react lg:text-8xl text-4xl text-blue-bright"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">REACT</p>
           </li>
@@ -334,5 +335,6 @@
 
   <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous"></script>
   <script src="./src/js/menu.js"></script>
+  <script src="./src/js/animations.js"></script>
 </body>
 </html>
