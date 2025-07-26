@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Dev Lukinha</title>
   <link rel="stylesheet" href="./src/css/output.css">
+  <link rel="stylesheet" href="./src/css/scroll.css">
   <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
-<body class="scroll-smooth">
+<body>
 
   <header class="flex flex-col lg:gap-10 gap-20 lg:mb-[200px]"> <!--Inicio da home-->
 
@@ -16,11 +18,11 @@
     </video>
 
     <!--Menu desktop-->
-    <div class="hidden lg:flex flex-row relative z-10">
+    <div class="hidden lg:flex flex-row relative z-10" id="topo">
       <nav class="w-full">
         <ul class="flex flex-row justify-end gap-10 mt-10 mr-20 text-xl text-white font-medium">
           <li>
-            <a href="#tecnologias" class="border-b-3 border-ttblue  transition  menu-item">Tecnologias</a>
+            <a href="#tecnologias" class="border-b-3 border-ttblue transition  menu-item">Tecnologias</a>
           </li>
           <li>
             <a href="#projetos" class="menu-item">Projetos</a>
@@ -29,7 +31,7 @@
             <a href="#sobreMim" class="menu-item">Sobre</a>
           </li>
           <li>
-            <a href="#" class="menu-item">Contato</a>
+            <a href="#contato" class="menu-item">Contato</a>
           </li>
         </ul>
       </nav>
@@ -55,7 +57,7 @@
         Seja bem-vindo! Aqui você vai encontrar projetos digitais criados com foco em estética, funcionalidade e resultados reais. Meu objetivo é transformar ideias em experiências que geram impacto e valor para quem acessa.
       </p>
       <button class="bg-ttblue lg:text-xl font-medium w-56 lg:w-52 lg:p-3 md:w-52 md:p-3 xl:w-60 xl:p-4 p-2 rounded-md hover:scale-95 hover:bg-blue-950 transition duration-500 lg:mt-10 btn-contato">
-        <a href="">Entre em Contato</a>
+        <a href="#contato">Entre em Contato</a>
       </button>
     </div>
 
@@ -85,7 +87,7 @@
 
           <li class="p-2 hover:bg-blue-600 transition-all duration-300">
             <i class="fa-solid fa-phone mr-1 ml-3"></i>
-            <a href="#">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
         </ul>
       </nav>
@@ -107,22 +109,7 @@
           por tecnologia e carros. Estou no meu último ano do curso técnico em informática no IFTM, onde eu também atuo como monitor de programação e participo de um projeto de desenvolvimento chamado Farmando XP. Tenho conhecimento sólido em desenvolvimento front end e design, estou começando a me aventurar no desenvolvimento back end e na segurança da informação. Além de programar, nas horas livres gosto de jogar jogos, desenhar e praticar algum esporte.
         </p>
 
-        <div class="botoes flex flex-row justify-center gap-6 mt-8 mb-20">
-          <button class="bg-ttblue text-white w-16 h-10 xl:w-24 xl:h-12 lg:w-20 lg:h-10 md:w-24 md:h-12 rounded-md hover:scale-95 hover:bg-blue-950 transition duration-500 cursor-pointer">
-            <a href=""><i class="fa-brands fa-github text-xl lg:text-3xl"></i></a>
-          </button>
-
-          <button class="bg-ttblue text-white w-16 h-10 xl:w-24 xl:h-12 lg:w-20 lg:h-10 md:w-24 md:h-12 rounded-md hover:scale-95 hover:bg-blue-950 transition duration-500 cursor-pointer">
-            <a href=""><i class="fa-brands fa-linkedin text-xl lg:text-3xl"></i></a>
-          </button>
-
-          <button class="bg-ttblue text-white w-16 h-10 xl:w-24 xl:h-12 lg:w-20 lg:h-10 md:w-24 md:h-12 rounded-md hover:scale-95 hover:bg-blue-950 transition duration-500 cursor-pointer">
-            <a href=""><i class="fa-brands fa-instagram text-xl lg:text-3xl"></i></a>
-          </button>
-          <button class="bg-ttblue text-white w-16 h-10 xl:w-24 xl:h-12 lg:w-20 lg:h-10 md:w-24 md:h-12 rounded-md hover:scale-95 hover:bg-blue-950 transition duration-500 cursor-pointer">
-            <a href=""><i class="fa-solid fa-file text-xl lg:text-3xl"></i></a>
-          </button>
-        </div>
+        
       </div>
     </section>
 
@@ -132,41 +119,41 @@
 
       <div class="front-end flex flex-col justify-center items-center max-w[900px]">
         <h2 class="lg:text-5xl text-3xl font-medium text-white lg:mt-30 mt-13 title-front">Front End</h2>
-        <div class="bg-white h-[0.3px] lg:w-[900px] w-[350px] mt-2 lg:mb-20 mb-10"></div>
+        <div class="bg-white h-[0.3px] lg:w-[900px] w-[350px] mt-2 lg:mb-20 mb-10 line-1"></div>
         
-        <ul class="flex flex-wrap justify-center items-center lg:gap-10 lg:mb-10 gap-3 cards-lg">
+        <ul class="flex flex-wrap justify-center items-center lg:gap-10 lg:mb-10 gap-3 cards-lg-front">
 
-          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-orange-400 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-orange-400 card-lg">
+          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-orange-400 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-orange-400 card-lg-front">
             <i class="fa-brands fa-html5 lg:text-8xl text-4xl text-orange-400"></i>
             <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">HTML</p>
           </li>
 
-          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-600 card-lg">
+          <li class=" flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-600 card-lg-front">
             <i class="fa-brands fa-css3-alt lg:text-8xl text-4xl text-blue-600"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">CSS</p>
           </li>
 
-          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-yellow-300 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-yellow-300 card-lg">
+          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-yellow-300 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-yellow-300 card-lg-front">
             <i class="fa-brands fa-js lg:text-8xl text-4xl text-yellow-300"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">JAVASCRIPT</p>
           </li>
 
-          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-pink-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-pink-500 card-lg">
+          <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-pink-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-pink-500 card-lg-front">
             <i class="fa-brands fa-sass lg:text-8xl text-4xl text-pink-500"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">SASS</p>
           </li>
       
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-violet-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-violet-600 card-lg">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-violet-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-violet-600 card-lg-front">
             <i class="fa-brands fa-bootstrap lg:text-8xl text-4xl text-violet-600 "></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">BOOSTRAP</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright-secundary rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright-secundary card-lg">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright-secundary rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright-secundary card-lg-front">
             <img src="assets/Tailwind_CSS_Logo.svg (1).png" alt="" class="lg:w-[100px] w-[50px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">TAILWIND</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright lg:ml-0 ml-3 card-lg">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-bright rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-bright lg:ml-0 ml-3 card-lg-front">
             <i class="fa-brands fa-react lg:text-8xl text-4xl text-blue-bright"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">REACT</p>
           </li>
@@ -179,27 +166,28 @@
 
       <div class="back-end and banco-dados flex flex-col justify-center items-center max-w[900px]">
 
-        <h2 class="lg:flex hidden lg:text-5xl text-3xl font-medium text-white lg:mt-30 mt-13 ">Back End & Banco de Dados</h2>
+        <h2 class="lg:flex hidden lg:text-5xl text-3xl font-medium text-white lg:mt-30 mt-13 title-back">Back End & Banco de Dados</h2>
         <h2 class="lg:hidden text-3xl text-center font-medium text-white  mt-13 ">Back End & <br>Banco de Dados</h2>
-        <div class="bg-white h-[0.3px] lg:w-[900px] w-[350px] mt-2 lg:mb-20 mb-10"></div>
+        <div class="bg-white h-[0.3px] lg:w-[900px] w-[350px] mt-2 lg:mb-20 mb-10 line-2"></div>
 
-        <ul class="lg:flex columns-2 justify-center items-center lg:gap-10 lg:mb-10 gap-3 ">
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-green-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-green-600">
+        <ul class="lg:flex columns-2 justify-center items-center lg:gap-10 lg:mb-10 gap-3 cards-lg-back">
+
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-green-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-green-600 card-lg-back">
             <i class="fa-brands fa-node-js lg:text-8xl text-4xl text-green-600"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">NODE JS</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-purple-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-purple-500 lg:mt-0 mt-4">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-purple-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-purple-500 lg:mt-0 mt-4 card-lg-back">
             <i class="fa-brands fa-php lg:text-8xl text-4xl text-purple-500"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">PHP</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-500 ">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-blue-500 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-blue-500 card-lg-back">
             <img src="./assets/c-logo.png" alt="" class="lg:w-[100px] w-[40px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">C</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-orange-400 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-orange-400 lg:mt-0 mt-4">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-orange-400 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-orange-400 lg:mt-0 mt-4 card-lg-back">
             <img src="./assets/icons8-mysql-48.png" alt="" class="lg:w-[98px] w-[38px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">MY SQL</p>
           </li>
@@ -207,30 +195,32 @@
       </div>
 
       <div class="back-end and banco-dados flex flex-col justify-center items-center max-w[900px]">
-         <h2 class="lg:text-5xl text-3xl font-medium text-white lg:mt-30 mt-13 ">Design & Edição</h2>
-        <div class="bg-white h-[0.3px] lg:w-[900px] w-[350px] mt-2 lg:mb-20 mb-10"></div>
-        <ul class="flex flex-wrap justify-center items-center lg:gap-10 lg:mb-10 gap-3">
-            <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-red-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-red-600">
+         <h2 class="lg:text-5xl text-3xl font-medium text-white lg:mt-30 mt-13 title-design ">Design & Edição</h2>
+        <div class="bg-white h-[0.3px] lg:w-[900px] w-[350px] mt-2 lg:mb-20 mb-10 line-3"></div>
+
+        <ul class="flex flex-wrap justify-center items-center lg:gap-10 lg:mb-10 gap-3 cards-design">
+
+            <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-red-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-red-600 card-design">
             <i class="fa-brands fa-figma lg:text-8xl text-4xl text-red-600"></i>
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold ">FIGMA</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-yellow-900 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-yellow-900">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-yellow-900 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-yellow-900 card-design">
             <img src="./assets/icons8-gimp-50.png" alt="" class="lg:w-[100px] w-[40px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">GIMP</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-fuchsia-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-fuchsia-600">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[100px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-fuchsia-600 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-fuchsia-600 card-design">
             <img src="./assets/picsart.png" alt="" class="lg:w-[70px] w-[30px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold">PICSART</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[140px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-stone-950 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-stone-950">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[140px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-stone-950 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-stone-950 card-design">
             <img src="./assets/Adobe-Color-Logo 1.png" alt="" class="lg:w-[90px] w-[40px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold text-center">ADOBE COLOR</p>
           </li>
 
-           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[140px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-cyan-700 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-cyan-700">
+           <li class="flex flex-col items-center justify-center lg:w-[160px] w-[140px] lg:h-[200px] lg:p-0 p-2 lg:border-4 border-2 border-cyan-700 rounded-md cursor-pointer hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-cyan-700 card-design">
             <img src="./assets/mockflow-logo-png_seeklogo-394602 1.png" alt="" class="lg:w-[90px] w-[40px]">
              <p class="text-white lg:text-2xl text-sm font-medium lg:font-semibold text-center">MOCKFLOW</p>
           </li>
@@ -240,7 +230,7 @@
 
     <!--Sessao dos projetos-->
     <section class="flex flex-col justify-center items-center gap-15 lg:h-[990px]" id="projetos">
-      <h1 class="lg:flex hidden lg:text-6xl text-4xl font-bold text-ttblue lg:mt-10 mt-10 text-center">PRINCIPAIS PROJETOS</h1>
+      <h1 class="lg:flex hidden lg:text-6xl text-4xl font-bold text-ttblue lg:mt-10 mt-10 text-center title-projetos">PRINCIPAIS PROJETOS</h1>
 
       <!--titulo-mobile-->
       <h1 class="lg:text-6xl lg:hidden text-4xl font-bold text-ttblue lg:mt-20 mt-10 text-center">PRINCIPAIS <br> PROJETOS</h1>
@@ -290,51 +280,88 @@
     </section>
 
     <!--Sessao de contato-->
-    <section class="bg-dark-blue flex flex-col gap-7 items-center lg:h-[1200px]">
-      <h1 class="lg:text-6xl text-4xl font-bold text-white lg:mt-40 mt-20 text-center">VAMOS TROCAR UMA IDEIA?</h1>
-      <p class="text-xl text-white text-justify w-[300px] lg:text-3xl lg:text-center lg:w-[1500px] md:w-[500px] md:text-center ">
+    <section class="bg-dark-blue flex flex-col gap-7 items-center lg:h-[1200px]" id="contato">
+      <h1 class="lg:text-6xl text-4xl font-bold text-white lg:mt-40 mt-20 text-center title-contato">VAMOS TROCAR UMA IDEIA?</h1>
+      <p class="text-xl text-white text-justify w-[300px] lg:text-3xl lg:text-center lg:w-[1500px] md:w-[500px] md:text-center paragrafo-contato">
         Curtiu minha jornada? Está pensando em ter seu próprio site ou só quer bater um papo sobre tecnologia? Fique à vontade para entrar em contato! Vou ficar muito feliz em te responder :)
       </p>
 
-      <form action="" class="flex flex-col gap-3">
-        <label for="nome" class="text-white text-xl font-semibold">NOME:</label>
-        <input type="text" placeholder="Seu nome" id="nome" class="bg-blue-500 lg:h-13 lg:w-[450px] border-2 focus:border-white focus:outline-none rounded-md text-dark-blue text-xl font-medium text-center">
-        <label for="assunto" class="text-white text-xl font-semibold">ASSUNTO:</label>
-        <textarea name="" id="assunto" class="resize-none bg-blue-500 lg:h-52 lg:w-[450px] border-2 focus:border-white focus:outline-none rounded-md text-dark-blue text-xl font-medium text-start" placeholder="Deixe aqui sua mensagem"></textarea>
-        <button type="submit">Enviar</button>
+      <form action="https://formsubmit.co/lucashenrique030407@gmail.com" method="POST" class="flex flex-col justify-center gap-3 min-w-[550px]">
+        <label for="nome" class="text-white text-xl text-start font-semibold label-1">NOME:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome aqui" required id="nome" class="bg-blue-500 lg:h-13 lg:w-full border-2 focus:border-white focus:outline-none rounded-md text-dark-blue text-xl font-medium text-center input-1">
+
+        <label for="email" class="text-white text-xl text-start font-semibold label-2">EMAIL:</label>
+        <input type="email" name="email" placeholder="Digite seu email aqui" required id="email" class="bg-blue-500 lg:h-13 lg:w-full border-2 focus:border-white focus:outline-none rounded-md text-dark-blue text-xl font-medium text-center input-2">
+
+        <label for="assunto" class="text-white text-xl font-semibold label-3">ASSUNTO:</label>
+        <textarea name="mensagem" id="assunto" class="resize-none bg-blue-500 lg:h-52 lg:w-full border-2 focus:border-white focus:outline-none rounded-md text-dark-blue text-xl font-medium text-center p-2 input-3" placeholder="Deixe aqui sua mensagem" required></textarea>
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contato">
+        <input type="hidden" name="_subject" value="Mensagem vinda do seu Portfólio">
+
+         <button id="btnEnviarMsg" class="bg-green-600 lg:h-10 lg:w-full rounded-md text-xl font-semibold cursor-pointer hover:bg-green-800  hover:scale-90 duration-300 btn-enviar " type="submit" >Enviar</button>
       </form>
 
-      <div>
-        <div></div>
-        <p>Ou</p>
-        <div></div>
-      </div>
-      <button>
-        <a href="">
-          <i class="fa-brands fa-instagram"></i>
-          Instagram
-        </a>
-      </button>
-      <button>
-        <a href="">
-          <i class="fa-brands fa-linkedin"></i>
-          Linkedin
-        </a>
-      </button>
-      <button>
-        <a href="">
-          <i class="fa-brands fa-whatsapp"></i>
-          Whatsapp
-        </a>
-      </button>
-      <div>
+     
 
+      <div class="flex flex-row items-center gap-3 line-final">
+         <div class="bg-white h-[0.3px] lg:w-[225px]  "></div>
+        <p class="text-2xl font-semibold text-white ">Ou</p>
+        <div class="bg-white h-[0.3px] lg:w-[225px] w-[350px] "></div>
       </div>
+
+    <div class="flex flex-row justify-center items-center gap-5 cards-btn">
+      <button class="border-2 border-pink-600 rounded-md lg:h-10 lg:w-44 text-xl font-semibold text-pink-600 cursor-pointer hover:bg-pink-600 hover:text-white  duration-300 card-btn">
+        <a href="https://www.instagram.com/lucas_henrib/" target="_blank">
+          <i class="fa-brands fa-instagram  text-2xl "></i>
+          <span class="text-white">Instagram</span>
+        </a>
+      </button>
+
+      <button class="border-2 border-ttblue rounded-md lg:h-10 lg:w-44 text-xl font-semibold text-ttblue cursor-pointer hover:bg-ttblue hover:text-white duration-300 card-btn">
+        <a href="https://www.linkedin.com/in/lucas-henrique-borges/" target="_blank">
+          <i class="fa-brands fa-linkedin  text-2xl"></i>
+          <span class="text-white">Linkedin</span>
+        </a>
+      </button>
+
+      <button class="border-2 border-green-500 rounded-md lg:h-10 lg:w-44 text-xl text-green-500 font-semibold  cursor-pointer hover:bg-green-500 hover:text-white duration-300 card-btn">
+        <a href="https://wa.me/5534998201646?text=Olá,%20vim%20atraves%20do%20seu%20portfolio." target="_blank">
+          <i class="fa-brands fa-whatsapp  text-2xl "></i>
+          <span class="text-white">Whatsapp</span>
+        </a>
+      </button>
+      </div>
+
+      <button class="border-2 border-green-600 rounded-md lg:h-10 lg:w-44 text-xl text-green-500 font-semibold  cursor-pointer hover:bg-green-600 hover:text-white duration-300 mt-16 btn-topo">
+        <a href="#topo">
+          <span class="text-white">Voltar ao topo</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </button>
+
     </section>
   </main>
 
+  <footer class="bg-sky-950 flex flex-col justify-center items-center">
+    <img src="./assets/devlukinha.png" alt="logo-devukinha" class="lg:w-40">
+    <h3 class="text-2xl text-white font-semibold">
+      DESENVOLVIDO POR DEV LUKINHA
+    </h3>
+    <p class="text-white">
+      Copyright © 2025 Dev Lukinha. 
+    </p>
+    <p class="text-white">
+      Todos os direitos reservados.
+    </p>
+  </footer>
+
   <script src="https://kit.fontawesome.com/14cc984910.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="./src/js/menu.js"></script>
   <script src="./src/js/animations.js"></script>
+  <script src="./src/js/message.js"></script>
+
 </body>
 </html>
