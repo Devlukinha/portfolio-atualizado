@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
+    "format": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
@@ -11,5 +12,9 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.7",
     "tailwindcss": "^4.1.7"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14"
   }
 }

@@ -1,4 +1,4 @@
-ScrollReveal({reset: true});
+ScrollReveal({reset: false});
 
 // animacao home
 ScrollReveal().reveal(".frase-desktop", {
@@ -9,11 +9,19 @@ ScrollReveal().reveal(".frase-desktop", {
     easing: 'ease-in-out'
 });
 
+ScrollReveal().reveal(".frase-mobile", {
+    origin: 'top',
+    distance: '50px',
+    duration: 1000,
+    delay: 0,
+    easing: 'ease-in-out'
+});
+
 ScrollReveal().reveal(".title-1", {
     origin: 'top',
     distance: '50px',
     duration: 800,
-    delay: 800,
+    delay: 600,
     easing: 'ease-in-out'
 });
 
@@ -21,7 +29,7 @@ ScrollReveal().reveal(".title-2", {
     origin: 'top',
     distance: '50px',
     duration: 800,
-    delay: 1200,
+    delay: 800,
     easing: 'ease-in-out'
 });
 
@@ -29,7 +37,7 @@ ScrollReveal().reveal(".paragrafo-inicial", {
     origin: 'left',
     distance: '80px',
     duration: 800,
-    delay: 1500,
+    delay: 1000,
     easing: 'ease-out'
 })
 
@@ -39,20 +47,28 @@ ScrollReveal().reveal(".btn-contato", {
     origin: 'right',
     distance: '50px',
     duration: 800,
-    delay: 1800,
+    delay: 100,
     easing: 'ease-in-out',
-    reset: true
 });
 
 //animacao sessao sobre mim
+ScrollReveal().reveal(".title-sobre", {
+  origin: 'top',
+  distance: '60px',
+  duration: 800,
+  delay: 300,
+  easing: 'ease-in-out',
+});
+
 ScrollReveal().reveal(".foto-perfil", {
   origin: 'left',
   distance: '30px',
-  duration: 2000,
+  duration: 1000,
+  delay: 500,
   easing: 'ease-out',
 });
 
-ScrollReveal().reveal(".title-sobre", {
+ScrollReveal().reveal(".paragrafo-sobre", {
   origin: 'right',
   distance: '60px',
   duration: 800,
@@ -60,15 +76,8 @@ ScrollReveal().reveal(".title-sobre", {
   easing: 'ease-in-out',
 })
 
-ScrollReveal().reveal(".paragrafo-sobre", {
-  origin: 'right',
-  distance: '60px',
-  duration: 800,
-  delay: 700,
-  easing: 'ease-in-out',
-})
-
 //animacao da sessa skills and tools
+
 
 //animcao skills front-end
 ScrollReveal().reveal(".title-skills", {
@@ -98,13 +107,22 @@ ScrollReveal().reveal(".line-1", {
 ScrollReveal().reveal(".cards-lg-front .card-lg-front", {
   origin: 'left',
   distance: '60px',
-  duration: 1000,
+  duration: 800,
+  delay: 700,
   interval: 500,
   easing: 'ease-in-out',
 });
 
 //animcao skills back-end
 ScrollReveal().reveal(".title-back", {
+  origin: 'left',
+  distance: '60px',
+  duration: 800,
+  delay: 700,
+  easing: 'ease-in-out',
+});
+
+ScrollReveal().reveal(".title-back-2", {
   origin: 'left',
   distance: '60px',
   duration: 800,
@@ -123,7 +141,7 @@ ScrollReveal().reveal(".line-2", {
 ScrollReveal().reveal(".cards-lg-back .card-lg-back", {
   origin: 'left',
   distance: '60px',
-  duration: 1000,
+  duration: 800,
   delay: 700,
   interval: 500,
   easing: 'ease-in-out',
@@ -149,7 +167,7 @@ ScrollReveal().reveal(".line-3", {
 ScrollReveal().reveal(".cards-design .card-design", {
   origin: 'left',
   distance: '60px',
-  duration: 1000,
+  duration: 800,
   delay: 700,
   interval: 500,
   easing: 'ease-in-out',
@@ -158,7 +176,15 @@ ScrollReveal().reveal(".cards-design .card-design", {
 //animcao projetos
 ScrollReveal().reveal(".title-projetos", {
   origin: 'top',
-  distance: '60px',
+  distance: '50px',
+  duration: 100,
+  delay: 700,
+  easing: 'ease-in-out',
+});
+
+ScrollReveal().reveal(".title-projetos-2", {
+  origin: 'top',
+  distance: '50px',
   duration: 1000,
   delay: 700,
   easing: 'ease-in-out',
@@ -166,10 +192,10 @@ ScrollReveal().reveal(".title-projetos", {
 
 ScrollReveal().reveal(".cards .card", {
   origin: 'left',
-  distance: '80px',
-  duration: 1000,
-  delay: 800,
-  interval: 200,
+  distance: '50px',
+  duration: 500,
+  delay: 500,
+  interval: 500,
   easing: 'ease-in-out',
 });
 
