@@ -14,20 +14,23 @@
     />
   </head>
   <body>
-    <header class="flex flex-col  gap-20lg:mb-[200px] lg:gap-10 md:h-[750px]" id="topo">
+    <header
+      class="gap-20lg:mb-[200px] flex flex-col md:h-[750px] lg:gap-10"
+      id="topo"
+    >
       <!--Inicio da home-->
 
       <video
         autoplay
         muted
         loop
-        class="absolute top-0 left-0 z-0 h-[960px] w-full object-cover lg:h-[950px] md:h-[820px] "
+        class="absolute top-0 left-0 z-0 h-[960px] w-full object-cover md:h-[820px] lg:h-[950px]"
       >
         <source src="./assets/video-bg-portfolio.mp4" />
       </video>
 
       <!--Menu desktop-->
-      <div class="relative z-10 hidden flex-row lg:flex" >
+      <div class="relative z-10 hidden flex-row lg:flex">
         <nav class="w-full">
           <ul
             class="mt-10 mr-20 flex flex-row justify-end gap-10 text-xl font-medium text-white"
@@ -52,7 +55,7 @@
         </nav>
       </div>
 
-      <div class="relative z-10 flex w-full justify-end lg:hidden mb-24">
+      <div class="relative z-10 mb-24 flex w-full justify-end lg:hidden">
         <button id="openMenu" class="lg:hidden">
           <i class="fa-solid fa-bars mt-5 mr-5 text-3xl text-white"></i>
         </button>
@@ -88,14 +91,18 @@
           </h1>
         </div>
 
-        <p class="paragrafo-inicial w-[300px] text-center text-xl 2xl:text-3xl md:w-[500px]  font-semibold  2xl:w-[1290px] lg:w-[1500px] lg:text-2xl">
-           Seja bem - vindo ao meu Portfólio !
+        <p
+          class="paragrafo-inicial w-[300px] text-center text-xl font-semibold md:text-2xl lg:w-[1500px] lg:text-2xl xl:text-3xl 2xl:w-[1290px]"
+        >
+          Seja bem - vindo ao meu Portfólio !
         </p>
         <p
-          class="paragrafo-inicial w-[300px] text-justify text-xl 2xl:text-3xl md:w-[500px] md:text-justify leading-8 2xl:w-[1290px] lg:w-[1500px] lg:text-center lg:text-2xl"
+          class="paragrafo-inicial w-[300px] text-justify text-xl leading-8 md:w-[670px] md:text-center md:text-2xl lg:w-[1500px] lg:text-center lg:text-2xl xl:text-3xl 2xl:w-[1290px]"
         >
-          Aqui você pode me conhecer melhor, acompanhar minha jornada como desenvolvedor, ver os projetos que já criei e descobrir como posso 
-          ajudar você ou sua empresa a transformar ideias em realidade com tecnologia e criatividade. 
+          Aqui você pode me conhecer melhor, acompanhar minha jornada como
+          desenvolvedor, ver os projetos que já criei e descobrir como posso
+          ajudar você ou sua empresa a transformar ideias em realidade com
+          tecnologia e criatividade.
         </p>
         <button
           class="bg-ttblue btn-contato w-56 rounded-md p-2 font-medium transition duration-500 hover:scale-95 hover:bg-blue-950 md:w-52 md:p-3 lg:mt-10 lg:w-52 lg:p-3 lg:text-xl xl:w-60 xl:p-4"
@@ -103,9 +110,13 @@
           <a href="#contato">Entre em Contato</a>
         </button>
 
-        <i class="fa-solid fa-computer-mouse  text-white text-3xl  2xl:mt-16 md:text-2xl  rotate-180"></i>
-        
-        <i class="fa-solid fa-arrow-down text-white text-3xl animate-bounce 2xl:mt-16 md:mt-[-17px] md:text-2xl"></i>
+        <i
+          class="fa-solid fa-computer-mouse rotate-180 text-3xl text-white md:text-2xl 2xl:mt-16"
+        ></i>
+
+        <i
+          class="fa-solid fa-arrow-down animate-bounce text-3xl text-white md:mt-[-17px] md:text-2xl 2xl:mt-16"
+        ></i>
       </div>
 
       <!--Menu mobile-->
@@ -147,7 +158,7 @@
     </header>
     <!--fim da home-->
 
-    <main class="flex flex-col gap-10   lg:mt-20 ">
+    <main class="flex flex-col gap-10 lg:mt-20">
       <!--corpo da pagina-->
 
       <section
@@ -165,7 +176,7 @@
           <img
             src="assets/foto-perfil.jpg"
             alt="foto-de-perfil"
-            class="foto-perfil w-[200px] rounded-md md:w-[280px] lg:w-[300px] lg:rounded-2xl xl:w-[400px] mt-7"
+            class="foto-perfil mt-7 w-[200px] rounded-md md:w-[280px] lg:w-[300px] lg:rounded-2xl xl:w-[400px]"
           />
         </div>
         <div>
@@ -175,7 +186,7 @@
             SOBRE MIM
           </h2>
           <p
-            class="paragrafo-sobre mt-10 lg:mt-10 w-[320px] text-justify text-xl font-normal md:w-[500px] lg:w-[400px] xl:w-[700px] xl:text-2xl"
+            class="paragrafo-sobre mt-10 w-[320px] text-justify indent-8 text-xl font-normal md:w-[600px] md:text-2xl lg:mt-10 lg:w-[400px] xl:w-[700px] xl:text-2xl"
           >
             Me chamo Lucas Henrique, sou um jovem de 18 anos apaixonado por
             tecnologia e carros. Estou no meu último ano do curso técnico em
@@ -191,7 +202,7 @@
 
       <!--Secao das skiils-->
       <section
-        class="secao-skills bg-dark-blue h-[1250px] lg:h-[1850px] md:h-[1880px]"
+        class="secao-skills bg-dark-blue h-[1830px] md:h-[1880px] lg:h-[1850px]"
         id="tecnologias"
       >
         <h1
@@ -202,7 +213,7 @@
 
         <!--Front end skills -->
         <div
-          class="front-end max-w[900px] flex flex-col items-center justify-center md:mb-32 skills"
+          class="front-end max-w[900px] skills mb-12 flex flex-col items-center justify-center md:mb-16 lg:mb-0"
         >
           <h2
             class="title-front mt-13 text-3xl font-medium text-white lg:mt-30 lg:text-5xl"
@@ -214,108 +225,106 @@
           ></div>
 
           <ul
-            class="cards-lg-front flex flex-wrap items-center justify-center gap-3 lg:mb-10 lg:gap-10 md:gap-10"
+            class="cards-lg-front flex flex-wrap items-center justify-center gap-3 md:gap-10 lg:mb-10 lg:gap-10"
           >
             <li
-              class="card-lg-front flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-orange-400 p-2 shadow-orange-400 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-front flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-orange-400 p-2 shadow-orange-400 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-html5 text-6xl text-orange-400 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-html5 text-6xl text-orange-400 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-xl font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 HTML
               </p>
             </li>
 
             <li
-              class="card-lg-front flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-600 p-2 shadow-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-front flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-600 p-2 shadow-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-css3-alt text-6xl text-blue-600 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-css3-alt text-6xl text-blue-600 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-xl font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 CSS
               </p>
             </li>
 
             <li
-              class="card-lg-front flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-yellow-300 p-2 shadow-yellow-300 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-front flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-yellow-300 p-2 shadow-yellow-300 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-js text-6xl text-yellow-300 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-js text-6xl text-yellow-300 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-xl font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 JAVASCRIPT
               </p>
             </li>
 
             <li
-              class="card-lg-front w-[120px] h-[140px] cursor-pointer flex flex-col items-center justify-center rounded-md border-2 border-pink-500 p-2 shadow-pink-500 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-front flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-pink-500 p-2 shadow-pink-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-sass text-6xl text-pink-500 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-sass text-6xl text-pink-500 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-xl font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 SASS
               </p>
             </li>
 
             <li
-              class="card-lg-front flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-violet-600 p-2 shadow-violet-600 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-front flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-violet-600 p-2 shadow-violet-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-bootstrap text-6xl text-violet-600 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-bootstrap text-6xl text-violet-600 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-xl font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 BOOSTRAP
               </p>
             </li>
 
             <li
-              class="border-blue-bright-secundary shadow-blue-bright-secundary card-lg-front flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 p-2 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="border-blue-bright-secundary shadow-blue-bright-secundary card-lg-front flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 p-2 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="assets/Tailwind_CSS_Logo.svg (1).png"
                 alt=""
-                class="w-[70px] lg:w-[100px] md:w-[85px]"
+                class="w-[70px] md:w-[85px] lg:w-[100px]"
               />
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 TAILWIND
               </p>
             </li>
 
             <li
-              class="border-blue-bright shadow-blue-bright card-lg-front ml-3 flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 p-2 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:ml-0 lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="border-blue-bright shadow-blue-bright card-lg-front ml-3 flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 p-2 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:ml-0 lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-react text-blue-bright text-4xl lg:text-8xl md:text-7xl"
+                class="fa-brands fa-react text-blue-bright text-6xl md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 REACT
               </p>
             </li>
-
-            <li></li>
           </ul>
         </div>
 
         <!--Back end skills-->
         <div
-          class="back-end and banco-dados max-w[900px] flex flex-col items-center justify-center md:mb-32"
+          class="back-end and banco-dados max-w[900px] mb-12 flex flex-col items-center justify-center md:mb-16 lg:mb-0"
         >
           <h2
             class="title-back mt-13 hidden text-3xl font-medium text-white lg:mt-30 lg:flex lg:text-5xl"
@@ -332,61 +341,59 @@
           ></div>
 
           <ul
-            class="cards-lg-back flex md:flex items-center justify-center gap-3 lg:mb-10 lg:flex lg:gap-10 md:gap-10"
+            class="cards-lg-back flex w-[380px] flex-wrap items-center justify-center gap-3 md:flex md:gap-10 lg:mb-10 lg:flex lg:gap-10 xl:w-full"
           >
             <li
-              class="card-lg-back w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-green-600 p-2 shadow-green-600 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-back flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-green-600 p-2 shadow-green-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-node-js text-4xl text-green-600 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-node-js text-6xl text-green-600 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 NODE JS
               </p>
             </li>
 
             <li
-              class="card-lg-back w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-purple-500 p-2 shadow-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:mt-0 lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-back flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-purple-500 p-2 shadow-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:mt-0 lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-php text-4xl text-purple-500 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-php text-6xl text-purple-500 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 PHP
               </p>
             </li>
 
-            
-
             <li
-              class="card-lg-back w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-500 p-2 shadow-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-back flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-500 p-2 shadow-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/c-logo.png"
                 alt=""
-                class="w-[40px] lg:w-[100px] md:w-[85px]"
+                class="w-[70px] md:w-[85px] lg:w-[100px]"
               />
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 C
               </p>
             </li>
 
             <li
-              class="card-lg-back w-[120px] h-[140px]cursor-pointer flex-col items-center justify-center rounded-md border-2 border-orange-400 p-2 shadow-orange-400 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-lg-back flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-orange-400 p-2 shadow-orange-400 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/icons8-mysql-48.png"
                 alt=""
-                class="w-[38px] lg:w-[98px] md:w-[85px]"
+                class="w-[50px] md:w-[85px] lg:w-[98px]"
               />
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 MY SQL
               </p>
@@ -396,7 +403,7 @@
 
         <!--Design skills-->
         <div
-          class="back-end and banco-dados max-w[900px] flex flex-col items-center justify-center md:mb-32"
+          class="back-end and banco-dados max-w[900px] mb-12 flex flex-col items-center justify-center md:mb-32 lg:mb-0"
         >
           <h2
             class="title-design mt-13 text-3xl font-medium text-white lg:mt-30 lg:text-5xl"
@@ -408,91 +415,91 @@
           ></div>
 
           <ul
-            class="cards-design flex flex-wrap items-center justify-center gap-3 lg:mb-10 lg:gap-10 md:gap-10"
+            class="cards-design flex flex-wrap items-center justify-center gap-3 md:gap-10 lg:mb-10 lg:gap-10"
           >
             <li
-              class="card-design flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-red-600 p-2 shadow-red-600 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-design flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-red-600 p-2 shadow-red-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
-                class="fa-brands fa-figma text-4xl text-red-600 lg:text-8xl md:text-7xl"
+                class="fa-brands fa-figma text-6xl text-red-600 md:text-7xl lg:text-8xl"
               ></i>
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 FIGMA
               </p>
             </li>
 
-             <li
-              class="card-design flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-600 p-2 shadow-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+            <li
+              class="card-design flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-600 p-2 shadow-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/canva.png"
                 alt=""
-                class="w-[40px] lg:w-[100px] md:w-[85px]"
+                class="w-[60px] md:w-[85px] lg:w-[100px]"
               />
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 CANVA
               </p>
             </li>
 
             <li
-              class="card-design flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-yellow-900 p-2 shadow-yellow-900 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-design flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-yellow-900 p-2 shadow-yellow-900 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/icons8-gimp-50.png"
                 alt=""
-                class="w-[40px] lg:w-[100px] md:w-[85px]"
+                class="w-[60px] md:w-[85px] lg:w-[100px]"
               />
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 GIMP
               </p>
             </li>
 
             <li
-              class="card-design flex w-[120px] h-[140px]cursor-pointer flex-col items-center justify-center rounded-md border-2 border-fuchsia-600 p-2 shadow-fuchsia-600 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-design flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-fuchsia-600 p-2 shadow-fuchsia-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/picsart.png"
                 alt=""
-                class="w-[30px] lg:w-[70px] md:w-[65px]"
+                class="w-[50px] md:w-[65px] lg:w-[70px]"
               />
               <p
-                class="text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 PICSART
               </p>
             </li>
 
             <li
-              class="card-design flex w-[120px] h-[140px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-zinc-500 p-2 shadow-zinc-500 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-design flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-zinc-500 p-2 shadow-zinc-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/Adobe-Color-Logo 1.png"
                 alt=""
-                class="w-[40px] lg:w-[90px] md:w-[85px]"
+                class="w-[60px] md:w-[85px] lg:w-[90px]"
               />
               <p
-                class="text-center text-sm font-medium text-white lg:text-2xl lg:font-semibold v"
+                class="v text-center text-xl font-medium text-white lg:text-2xl lg:font-semibold"
               >
                 ADOBE COLOR
               </p>
             </li>
 
             <li
-              class="card-design flex w-[120px] h-[140px]cursor-pointer flex-col items-center justify-center rounded-md border-2 border-cyan-700 p-2 shadow-cyan-700 transition-all duration-300 hover:scale-105 hover:shadow-xl lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0 md:h-[170px] md:w-[130px]"
+              class="card-design flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-cyan-700 p-4 shadow-cyan-700 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/mockflow-logo-png_seeklogo-394602 1.png"
                 alt=""
-                class="w-[40px] lg:w-[90px] md:w-[85px]"
+                class="w-[60px] md:w-[85px] lg:w-[90px]"
               />
               <p
-                class="text-center text-sm font-medium text-white lg:text-2xl lg:font-semibold md:text-xl"
+                class="text-center text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
               >
                 MOCKFLOW
               </p>
@@ -524,7 +531,7 @@
           class="cards flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-20"
         >
           <div
-            class="card border-ttblue flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 p-2 lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4 md:w-[370px]"
+            class="card border-ttblue flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
           >
             <img
               src="./assets/coffeebyte.png"
@@ -533,7 +540,7 @@
             />
             <h3 class="text-ttblue mt-3 text-3xl font-bold">COFFEE BYTE</h3>
             <p
-              class="mt-3 w-[320px] text-center text-xl font-normal lg:mt-5 lg:w-[200px] xl:w-[270px] xl:text-xl md:w-full"
+              class="mt-3 w-[320px] text-center text-xl font-normal md:w-full lg:mt-5 lg:w-[200px] xl:w-[270px] xl:text-xl"
             >
               Uma cafeteria feita para programadores. Projeto desenvolvido para
               a disciplina Lab Programação 2.
@@ -549,7 +556,7 @@
           </div>
 
           <div
-            class="card border-ttblue flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 p-2 lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4 md:w-[370px]"
+            class="card border-ttblue flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
           >
             <img
               src="./assets/devburguer.png"
@@ -576,7 +583,7 @@
           </div>
 
           <div
-            class="card border-ttblue flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 p-2 lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4 md:w-[370px]"
+            class="card border-ttblue flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
           >
             <img
               src="./assets/todolist.png"
@@ -606,7 +613,7 @@
 
       <!--Sessao de contato-->
       <section
-        class="bg-dark-blue flex flex-col items-center gap-7 lg:h-[1200px] md:h-[1150px]"
+        class="bg-dark-blue flex h-[1290px] flex-col items-center gap-7 md:h-[1150px] lg:h-[1200px] xl:h-[1200px]"
         id="contato"
       >
         <h1
@@ -615,7 +622,7 @@
           VAMOS TROCAR UMA IDEIA?
         </h1>
         <p
-          class="paragrafo-contato w-[300px] text-justify text-xl text-white md:w-[580px]  lg:w-[1500px] lg:text-center lg:text-3xl indent-3 leading-8 md:mb-12"
+          class="paragrafo-contato w-[300px] text-justify indent-3 text-xl leading-8 text-white md:mb-12 md:w-[580px] lg:w-[1500px] lg:text-center lg:text-3xl"
         >
           Curtiu minha jornada? Está pensando em ter seu próprio site ou só quer
           bater um papo sobre tecnologia? Fique à vontade para entrar em
@@ -625,7 +632,7 @@
         <form
           action="https://formsubmit.co/lucashenrique030407@gmail.com"
           method="POST"
-          class="flex min-w-[550px] flex-col justify-center gap-3"
+          class="flex w-[340px] flex-col justify-center gap-3 xl:min-w-[550px]"
         >
           <label
             for="nome"
@@ -638,7 +645,7 @@
             placeholder="Digite seu nome aqui"
             required
             id="nome"
-            class="text-dark-blue input-1 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none lg:h-13 lg:w-full md:h-12"
+            class="text-dark-blue input-1 h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full"
           />
 
           <label
@@ -652,7 +659,7 @@
             placeholder="Digite seu email aqui"
             required
             id="email"
-            class="text-dark-blue input-2 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none lg:h-13 lg:w-full md:h-12"
+            class="text-dark-blue input-2 h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full"
           />
 
           <label for="assunto" class="label-3 text-xl font-semibold text-white"
@@ -661,7 +668,7 @@
           <textarea
             name="mensagem"
             id="assunto"
-            class="text-dark-blue input-3 resize-none rounded-md border-2 bg-blue-500 p-2 text-center text-xl font-medium focus:border-white focus:outline-none lg:h-52 lg:w-full md:h-52"
+            class="text-dark-blue input-3 h-48 resize-none rounded-md border-2 bg-blue-500 p-2 text-center text-xl font-medium focus:border-white focus:outline-none md:h-52 xl:h-52 xl:w-full"
             placeholder="Deixe aqui sua mensagem"
             required
           ></textarea>
@@ -680,7 +687,7 @@
 
           <button
             id="btnEnviarMsg"
-            class="btn-enviar cursor-pointer rounded-md bg-green-600 text-xl font-semibold duration-300 hover:scale-90 hover:bg-green-800 lg:h-10 lg:w-full md:h-10"
+            class="btn-enviar h-8 cursor-pointer rounded-md bg-green-600 text-xl font-semibold duration-300 hover:scale-90 hover:bg-green-800 md:h-10 xl:h-10 xl:w-full"
             type="submit"
           >
             Enviar
@@ -688,14 +695,20 @@
         </form>
 
         <div class="line-final flex flex-row items-center gap-3">
-          <div class="h-[0.3px] bg-white lg:w-[225px] md:w-[250px]"></div>
+          <div
+            class="h-[0.3px] w-[140px] bg-white md:w-[250px] xl:w-[225px]"
+          ></div>
           <p class="text-2xl font-semibold text-white">Ou</p>
-          <div class="h-[0.3px] w-[350px] bg-white lg:w-[225px] md:w-[250px]"></div>
+          <div
+            class="h-[0.3px] w-[140px] bg-white md:w-[250px] xl:w-[225px]"
+          ></div>
         </div>
 
-        <div class="cards-btn flex flex-row items-center justify-center gap-5">
+        <div
+          class="cards-btn flex flex-col items-center justify-center gap-3 md:flex-row lg:flex-row xl:flex-row xl:gap-5"
+        >
           <button
-            class="card-btn cursor-pointer rounded-md border-2 border-pink-600 text-xl font-semibold text-pink-600 duration-300 hover:bg-pink-600 hover:text-white lg:h-10 lg:w-44 md:w-44 md:h-12"
+            class="card-btn cursor-pointer rounded-md border-2 border-pink-600 p-2 text-xl font-semibold text-pink-600 duration-300 hover:bg-pink-600 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
           >
             <a href="https://www.instagram.com/lucas_henrib/" target="_blank">
               <i class="fa-brands fa-instagram text-2xl"></i>
@@ -704,7 +717,7 @@
           </button>
 
           <button
-            class="border-ttblue text-ttblue hover:bg-ttblue card-btn cursor-pointer rounded-md border-2 text-xl font-semibold duration-300 hover:text-white lg:h-10 lg:w-44 md:w-44 md:h-12"
+            class="border-ttblue text-ttblue hover:bg-ttblue card-btn w-[144px] cursor-pointer rounded-md border-2 p-2 text-xl font-semibold duration-300 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
           >
             <a
               href="https://www.linkedin.com/in/lucas-henrique-borges/"
@@ -716,7 +729,7 @@
           </button>
 
           <button
-            class="card-btn cursor-pointer rounded-md border-2 border-green-500 text-xl font-semibold text-green-500 duration-300 hover:bg-green-500 hover:text-white lg:h-10 lg:w-44 md:w-44 md:h-12"
+            class="card-btn cursor-pointer rounded-md border-2 border-green-500 p-2 text-xl font-semibold text-green-500 duration-300 hover:bg-green-500 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44"
           >
             <a
               href="https://wa.me/5534998201646?text=Olá,%20vim%20atraves%20do%20seu%20portfolio."
@@ -729,7 +742,7 @@
         </div>
 
         <button
-          class="btn-topo mt-16 md:mt-10 cursor-pointer rounded-md border-2 border-green-600 text-xl font-semibold text-green-500 duration-300 hover:bg-green-600 hover:text-white lg:h-10 lg:w-44 md:w-44 md:h-12"
+          class="btn-topo mt-5 cursor-pointer rounded-md border-2 border-green-600 p-2 text-xl font-semibold text-green-500 duration-300 hover:bg-green-600 hover:text-white md:mt-10 md:h-12 md:w-44 lg:mt-16 lg:h-10 lg:w-44 xl:mt-16"
         >
           <a href="#topo">
             <span class="text-white">Voltar ao topo</span>
@@ -740,8 +753,14 @@
     </main>
 
     <footer class="flex flex-col items-center justify-center bg-sky-950">
-      <img src="./assets/devlukinha.png" alt="logo-devukinha" class="lg:w-40 md:w-24" />
-      <h3 class="text-2xl font-semibold text-white md:text-xl">
+      <img
+        src="./assets/devlukinha.png"
+        alt="logo-devukinha"
+        class="w-20 md:w-24 lg:w-40 xl:w-40"
+      />
+      <h3
+        class="text-xl font-semibold text-white md:text-xl lg:text-2xl xl:text-2xl"
+      >
         DESENVOLVIDO POR DEV LUKINHA
       </h3>
       <p class="text-white md:font-light">Copyright © 2025 Dev Lukinha.</p>
@@ -757,7 +776,7 @@
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
     <script src="./src/js/menu.js"></script>
-    <script src="./src/js/animations.js"></script>
+    <!-- <script src="./src/js/animations.js"></script> -->
     <script src="./src/js/message.js"></script>
   </body>
 </html>
