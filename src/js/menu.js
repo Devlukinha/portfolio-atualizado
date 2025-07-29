@@ -22,9 +22,9 @@ itens.forEach((item) => {
   // adiciona evento de click em todos os links
   item.addEventListener("click", () => {
     itens.forEach((link) => {
-      link.classList.remove("border-b-3", "border-ttblue");
+      link.classList.remove("border-b-4", "border-blue-700");
     });
 
-    item.classList.add("border-b-3", "border-ttblue"); // adiciona a classe no item clicado
+    item.classList.add("border-b-4", "border-blue-700"); // adiciona a classe no item clicado
   });
 });
