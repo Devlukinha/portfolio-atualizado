@@ -1,338 +1,130 @@
-function carregarAnimacoes() {
-  ScrollReveal({ reset: false });
+window.revelar = ScrollReveal({reset: true})
 
-  //menu
-  ScrollReveal().reveal(".logo-dev-desktop", {
-    origin: "left",
-    distance: "50px",
-    duration: 800,
-    delay: 0,
-    easing: "ease-in-out",
-  });
+//home do site 
+revelar.reveal('.frase-desktop', {
+  duration: 1000,
+  distance: '90px'
+});
 
-  ScrollReveal().reveal(".logo-dev-mobile", {
-    origin: "left",
-    distance: "50px",
-    duration: 800,
-    delay: 0,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.frase-mobile', {
+  origin: 'top',
+  duration: 1000,
+  distance: '90px'
+});
 
-  ScrollReveal().reveal(".menu-desktop", {
-    origin: "right",
-    distance: "50px",
-    duration: 800,
-    delay: 0,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.title-home', {
+  duration: 1000,
+  distance: '90px',
+  delay: 500
+});
 
-  ScrollReveal().reveal(".menu-mobile", {
-    origin: "right",
-    distance: "50px",
-    duration: 800,
-    delay: 0,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.frase-desktop-2', {
+  duration: 1000,
+  distance: '60px',
+  delay: 700
+});
 
-  // animacao home
-  ScrollReveal().reveal(".frase-desktop", {
-    origin: "top",
-    distance: "50px",
-    duration: 800,
-    delay: 0,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.paragrafo-inicial', {
+  duration: 1000,
+  distance: '60px',
+  delay: 1000
+});
 
-  ScrollReveal().reveal(".frase-mobile", {
-    origin: "top",
-    distance: "50px",
-    duration: 1000,
-    delay: 0,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.btn-contato', {
+  duration: 2000,
+  distance: '60px',
+  delay: 1500,
+  reset: true
+});
 
-  ScrollReveal().reveal(".title-1", {
-    origin: "top",
-    distance: "50px",
-    duration: 800,
-    delay: 600,
-    easing: "ease-in-out",
-  });
+//Sessao sobre mim 
+revelar.reveal('.foto-perfil', {
+  origin: 'left',
+  duration: 1000,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".title-2", {
-    origin: "top",
-    distance: "50px",
-    duration: 800,
-    delay: 800,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.title-sobre', {
+  origin: 'rigth',
+  duration: 1000,
+  delay: 600,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".paragrafo-inicial", {
-    origin: "left",
-    distance: "80px",
-    duration: 800,
-    delay: 1000,
-    easing: "ease-out",
-  });
+revelar.reveal('.paragrafo-sobre', {
+  origin: 'rigth',
+  duration: 1000,
+  delay: 800,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".btn-contato", {
-    opacity: 0,
-    origin: "right",
-    distance: "50px",
-    duration: 800,
-    delay: 100,
-    easing: "ease-in-out",
-  });
 
-  //animacao sessao sobre mim
-  ScrollReveal().reveal(".title-sobre", {
-    origin: "top",
-    distance: "60px",
-    duration: 800,
-    delay: 300,
-    easing: "ease-in-out",
-  });
+// Sessao skills
+revelar.reveal('.title-skills', {
+  origin: 'top',
+  duration: 800,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".foto-perfil", {
-    origin: "left",
-    distance: "30px",
-    duration: 1000,
-    delay: 500,
-    easing: "ease-out",
-  });
+revelar.reveal('.title-front', {
+  origin: 'rigth',
+  duration: 800,
+  delay: 600,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".paragrafo-sobre", {
-    origin: "right",
-    distance: "60px",
-    duration: 800,
-    delay: 300,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.line-1', {
+  origin: 'left',
+  duration: 800,
+  delay: 800,
+  distance: '90px',
+});
 
-  //animacao da sessa skills and tools
+revelar.reveal('.card-lg-front-1', {
+  origin: 'left',
+  duration: 1000,
+  delay: 1000,
+  distance: '90px',
+});
 
-  //animcao skills front-end
-  ScrollReveal().reveal(".title-skills", {
-    origin: "top",
-    distance: "60px",
-    duration: 800,
-    delay: 300,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.card-lg-front-2', {
+  origin: 'left',
+  duration: 800,
+  delay: 1500,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".title-front", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 500,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.card-lg-front-3', {
+  origin: 'left',
+  duration: 800,
+  delay: 2000,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".line-1", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 600,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.card-lg-front-4', {
+  origin: 'left',
+  duration: 800,
+  delay: 2500,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".cards-lg-front .card-lg-front", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 700,
-    interval: 500,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.card-lg-front-5', {
+  origin: 'left',
+  duration: 800,
+  delay: 3000,
+  distance: '90px',
+});
 
-  //animcao skills back-end
-  ScrollReveal().reveal(".title-back", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 700,
-    easing: "ease-in-out",
-  });
+revelar.reveal('.card-lg-front-6', {
+  origin: 'left',
+  duration: 800,
+  delay: 3500,
+  distance: '90px',
+});
 
-  ScrollReveal().reveal(".title-back-2", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 700,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".line-2", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 600,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".cards-lg-back .card-lg-back", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 700,
-    interval: 500,
-    easing: "ease-in-out",
-  });
-
-  //animcao skills design
-  ScrollReveal().reveal(".title-design", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 700,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".line-3", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 600,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".cards-design .card-design", {
-    origin: "left",
-    distance: "60px",
-    duration: 800,
-    delay: 700,
-    interval: 500,
-    easing: "ease-in-out",
-  });
-
-  //animcao projetos
-  ScrollReveal().reveal(".title-projetos", {
-    origin: "top",
-    distance: "50px",
-    duration: 100,
-    delay: 700,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".title-projetos-2", {
-    origin: "top",
-    distance: "50px",
-    duration: 1000,
-    delay: 700,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".cards .card", {
-    origin: "left",
-    distance: "50px",
-    duration: 500,
-    delay: 500,
-    interval: 500,
-    easing: "ease-in-out",
-  });
-
-  //animcao sessao contato
-  ScrollReveal().reveal(".title-contato", {
-    origin: "top",
-    distance: "60px",
-    duration: 1000,
-    delay: 700,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".paragrafo-contato", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 800,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".label-1", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 800,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".input-1", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 800,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".label-2", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 1000,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".input-2", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 800,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".label-3", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 1000,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".input-3", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 800,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".btn-enviar", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 800,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".line-final", {
-    origin: "left",
-    distance: "60px",
-    duration: 1000,
-    delay: 800,
-    easing: "ease-out",
-  });
-
-  ScrollReveal().reveal(".cards-btn .card-btn", {
-    origin: "left",
-    distance: "80px",
-    duration: 1000,
-    delay: 800,
-    interval: 200,
-    easing: "ease-in-out",
-  });
-
-  ScrollReveal().reveal(".btn-topo", {
-    origin: "bottom",
-    distance: "80px",
-    duration: 1000,
-    delay: 800,
-    interval: 200,
-    easing: "ease-in-out",
-  });
-}
-
-const video = document.getElementById("video-fundo");
-
-video.oncanplaythrough = () => {
-  carregarAnimacoes();
-};
+revelar.reveal('.card-lg-front-7', {
+  origin: 'left',
+  duration: 800,
+  delay: 4000,
+  distance: '90px',
+});
