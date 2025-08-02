@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Portfólio Dev Lukinha - Desenvolvedor Web Front End"/>
+    <meta property="og:image" content="https://devlukinha.github.io/portfolio-atualizado/assets/devlukinha.png"/>
+    <meta property="og:description" content="Conheça minha jornada como desenvolvedor front-end, com projetos que unem design moderno, código limpo e paixão por tecnologia."/>
+    <meta property="og:site_name" content="Portfólio Dev Lukinha" />
+
     <title>Portfólio Dev Lukinha</title>
     <link rel="stylesheet" href="./src/css/output.css" />
     <link rel="stylesheet" href="./src/css/scroll.css" />
@@ -24,14 +31,14 @@
       href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
     />
   </head>
-  <body>
+  <body class="overflow-hidden">
     <header
-      class="gap-20  lg:mb-[200px]  flex flex-col md:h-[750px] lg:gap-10"
+      class="bg-[url('../../assets/image-bg-portfolio.jpg')] bg-cover bg-center bg-no-repeat h-[960px] lg:h-[950px] gap-20 lg:mb-[200px] flex flex-col md:h-[750px] lg:gap-10"
       id="topo"
     >
       <!--Inicio da home-->
 
-      <video
+      <!--<video
         id="video-fundo"
         autoplay
         muted
@@ -39,7 +46,7 @@
         class="absolute top-0 left-0 z-0 h-[960px] w-full object-cover md:h-[820px] lg:h-[950px]"
       >
         <source src="./assets/video-bg-portfolio.mp4" />
-      </video>
+      </video> -->
 
       <!--Menu desktop-->
       <div
@@ -114,7 +121,7 @@
           <h1
             class=" text-4xl font-bold text-blue-700 text-shadow-white md:text-5xl lg:text-5xl xl:text-7xl"
           >
-            FULL STACK
+            FRONT END
           </h1>
         </div>
 
@@ -186,7 +193,7 @@
     </header>
     <!--fim da home-->
 
-    <main class="flex flex-col gap-10  lg:mt-20 ">
+    <main class="flex flex-col gap-10 mt-10 lg:mt-20 ">
       <!--corpo da pagina-->
 
       <section
@@ -230,7 +237,7 @@
 
       <!--Secao das skiils-->
       <section
-        class="secao-skills bg-dark-blue h-[1830px] md:h-[1880px] lg:h-[1850px]"
+        class="secao-skills bg-slate-950 h-[1330px] md:h-[1880px] lg:h-[1350px]"
         id="tecnologias"
       >
         <h1
@@ -350,103 +357,25 @@
           </ul>
         </div>
 
-        <!--Back end skills-->
+        
+        <!--Design skills-->
         <div
-          class="back-end and banco-dados max-w[900px] mb-12 flex flex-col items-center justify-center md:mb-16 lg:mb-0"
+          class="design max-w[900px] mb-12 flex flex-col items-center justify-center md:mb-32 lg:mb-0"
         >
           <h2
-            class="title-back mt-13 hidden text-3xl font-medium text-white lg:mt-30 lg:flex lg:text-5xl"
+            class="title-design invisible mt-13 text-3xl font-medium text-white lg:mt-30 lg:text-5xl"
           >
-            Back End & Banco de Dados
-          </h2>
-          <h2
-            class="title-back-2 mt-13 text-center text-3xl font-medium text-white lg:hidden"
-          >
-            Back End & <br />Banco de Dados
+            Design & Edição
           </h2>
           <div
             class="line-2 mt-2 mb-10 h-[0.3px] w-[320px] bg-white lg:mb-20 lg:w-[900px]"
           ></div>
 
           <ul
-            class="cards-lg-back flex w-[340px] flex-wrap items-center justify-center gap-3 md:flex md:gap-10 lg:mb-10 lg:flex lg:gap-10 xl:w-full"
-          >
-            <li
-              class="card-lg-back flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-green-600 p-2 shadow-green-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
-            >
-              <i
-                class="fa-brands fa-node-js text-6xl text-green-600 md:text-7xl lg:text-8xl"
-              ></i>
-              <p
-                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
-              >
-                NODE JS
-              </p>
-            </li>
-
-            <li
-              class="card-lg-back flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-purple-500 p-2 shadow-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:mt-0 lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
-            >
-              <i
-                class="fa-brands fa-php text-6xl text-purple-500 md:text-7xl lg:text-8xl"
-              ></i>
-              <p
-                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
-              >
-                PHP
-              </p>
-            </li>
-
-            <li
-              class="card-lg-back flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-500 p-2 shadow-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
-            >
-              <img
-                src="./assets/c-logo.png"
-                alt=""
-                class="w-[70px] md:w-[85px] lg:w-[100px]"
-              />
-              <p
-                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
-              >
-                C
-              </p>
-            </li>
-
-            <li
-              class="card-lg-back flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-orange-400 p-2 shadow-orange-400 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
-            >
-              <img
-                src="./assets/icons8-mysql-48.png"
-                alt=""
-                class="w-[50px] md:w-[85px] lg:w-[98px]"
-              />
-              <p
-                class="text-xl font-medium text-white md:text-xl lg:text-2xl lg:font-semibold"
-              >
-                MY SQL
-              </p>
-            </li>
-          </ul>
-        </div>
-
-        <!--Design skills-->
-        <div
-          class="back-end and banco-dados max-w[900px] mb-12 flex flex-col items-center justify-center md:mb-32 lg:mb-0"
-        >
-          <h2
-            class="title-design mt-13 text-3xl font-medium text-white lg:mt-30 lg:text-5xl"
-          >
-            Design & Edição
-          </h2>
-          <div
-            class="line-3 mt-2 mb-10 h-[0.3px] w-[320px] bg-white lg:mb-20 lg:w-[900px]"
-          ></div>
-
-          <ul
             class="cards-design flex flex-wrap items-center justify-center gap-3 md:gap-10 lg:mb-10 lg:gap-10"
           >
             <li
-              class="card-design flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-red-600 p-2 shadow-red-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
+              class="card-design-1 invisible flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-red-600 p-2 shadow-red-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <i
                 class="fa-brands fa-figma text-6xl text-red-600 md:text-7xl lg:text-8xl"
@@ -459,7 +388,7 @@
             </li>
 
             <li
-              class="card-design flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-600 p-2 shadow-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
+              class="card-design-2 invisible flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-blue-600 p-2 shadow-blue-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/canva.png"
@@ -474,7 +403,7 @@
             </li>
 
             <li
-              class="card-design flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-yellow-900 p-2 shadow-yellow-900 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
+              class="card-design-3 invisible flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-yellow-900 p-2 shadow-yellow-900 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/icons8-gimp-50.png"
@@ -489,7 +418,7 @@
             </li>
 
             <li
-              class="card-design flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-fuchsia-600 p-2 shadow-fuchsia-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
+              class="card-design-4 invisible flex h-[140px] w-[110px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-fuchsia-600 p-2 shadow-fuchsia-600 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/picsart.png"
@@ -504,7 +433,7 @@
             </li>
 
             <li
-              class="card-design flex h-[140px] w-[112px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-zinc-500 p-2 shadow-zinc-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
+              class="card-design-5 invisible flex h-[140px] w-[112px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-zinc-500 p-2 shadow-zinc-500 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/Adobe-Color-Logo 1.png"
@@ -519,7 +448,7 @@
             </li>
 
             <li
-              class="card-design flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-cyan-700 p-4 shadow-cyan-700 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
+              class="card-design-6 invisible flex h-[140px] w-[120px] cursor-pointer flex-col items-center justify-center rounded-md border-2 border-cyan-700 p-4 shadow-cyan-700 transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[170px] md:w-[130px] lg:h-[200px] lg:w-[160px] lg:border-4 lg:p-0"
             >
               <img
                 src="./assets/mockflow-logo-png_seeklogo-394602 1.png"
@@ -542,14 +471,14 @@
         id="projetos"
       >
         <h1
-          class="title-projetos mt-10 hidden text-center text-4xl font-bold text-blue-700 lg:mt-10 lg:flex lg:text-6xl"
+          class="title-projetos invisible mt-10 hidden text-center text-4xl font-bold text-blue-700 lg:mt-10 lg:flex lg:text-6xl"
         >
           PRINCIPAIS PROJETOS
         </h1>
 
         <!--titulo-mobile-->
         <h1
-          class="title-projetos-2 mt-10 text-center text-4xl font-bold text-blue-700 lg:mt-20 lg:hidden lg:text-6xl"
+          class="title-projetos-2 invisible mt-10 text-center text-4xl font-bold text-blue-700 lg:mt-20 lg:hidden lg:text-6xl"
         >
           PRINCIPAIS <br />
           PROJETOS
@@ -559,7 +488,8 @@
           class="cards flex flex-col items-center justify-center gap-10 lg:flex-row lg:gap-20"
         >
           <div
-            class="card flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 border-blue-700 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
+            class="card-projeto-1 invisible
+             flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 border-blue-700 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
           >
             <img
               src="./assets/coffeebyte.png"
@@ -584,7 +514,7 @@
           </div>
 
           <div
-            class="card flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 border-blue-700 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
+            class="card-projeto-2 invisible flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 border-blue-700 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
           >
             <img
               src="./assets/devburguer.png"
@@ -611,7 +541,7 @@
           </div>
 
           <div
-            class="card flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 border-blue-700 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
+            class="card-projeto-3 invisible flex min-h-[520px] flex-col items-center justify-start rounded-2xl border-4 border-blue-700 p-2 md:w-[370px] lg:h-[680px] lg:w-[400px] lg:justify-center lg:p-4"
           >
             <img
               src="./assets/todolist.png"
@@ -637,23 +567,33 @@
             </button>
           </div>
         </div>
+          <div class="container-git invisible flex flex-col justify-center items-center gap-5">
+            <p class="text-xl">Confira o código dos projetos aqui:</p>
+                     <button
+              class="card  cursor-pointer rounded-md border-2 border-black p-2 text-xl font-semibold text-black duration-300 hover:bg-black hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
+            >
+              <a href="https://github.com/Devlukinha" target="_blank">
+                <i class="fa-brands fa-github text-2xl"></i>
+                <span class="">GitHub</span>
+              </a>
+            </button>
+          </div>
       </section>
 
       <!--Sessao de contato-->
       <section
-        class="bg-dark-blue flex h-[1290px] flex-col items-center gap-7 md:h-[1150px] lg:h-[1200px] xl:h-[1200px]"
+        class="bg-slate-950 flex h-[1290px] flex-col items-center gap-7 md:h-[1150px] lg:h-[1200px] xl:h-[1200px]"
         id="contato"
       >
         <h1
-          class="title-contato mt-20 text-center text-4xl font-bold text-white lg:mt-40 lg:text-6xl"
+          class="title-contato invisible mt-20 text-center text-2xl font-bold text-white lg:mt-40 lg:text-6xl"
         >
           VAMOS TROCAR UMA IDEIA?
         </h1>
         <p
-          class="paragrafo-contato w-[300px] text-justify indent-3 text-xl leading-8 text-white md:mb-12 md:w-[580px] lg:w-[1500px] lg:text-center lg:text-3xl"
+          class="paragrafo-contato invisible w-[300px] lg:mt-7 text-center indent-3 text-xl leading-8 text-white md:mb-12 md:w-[580px] lg:w-[1500px] lg:text-center lg:text-3xl"
         >
-          Curtiu minha jornada? Está pensando em ter seu próprio site ou só quer
-          bater um papo sobre tecnologia? Fique à vontade para entrar em
+          Fique à vontade para entrar em
           contato! Vou ficar muito feliz em te responder :)
         </p>
 
@@ -664,7 +604,7 @@
         >
           <label
             for="nome"
-            class="label-1 text-start text-xl font-semibold text-white"
+            class="label-1 invisible text-start text-xl font-semibold text-white"
             >NOME:</label
           >
           <input
@@ -673,12 +613,12 @@
             placeholder="Digite seu nome aqui"
             required
             id="nome"
-            class="text-dark-blue input-1 h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full"
+            class="text-dark-blue input-1 invisible h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full"
           />
 
           <label
             for="email"
-            class="label-2 text-start text-xl font-semibold text-white"
+            class="label-2 invisible text-start text-xl font-semibold text-white"
             >EMAIL:</label
           >
           <input
@@ -687,16 +627,16 @@
             placeholder="Digite seu email aqui"
             required
             id="email"
-            class="text-dark-blue input-2 h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full"
+            class="text-dark-blue input-2 invisible h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full"
           />
 
-          <label for="assunto" class="label-3 text-xl font-semibold text-white"
+          <label for="assunto" class="label-3 invisible text-xl font-semibold text-white"
             >ASSUNTO:</label
           >
           <textarea
             name="mensagem"
             id="assunto"
-            class="text-dark-blue input-3 h-48 resize-none rounded-md border-2 bg-blue-500 p-2 text-center text-xl font-medium focus:border-white focus:outline-none md:h-52 xl:h-52 xl:w-full"
+            class="text-dark-blue input-3 invisible h-48 resize-none rounded-md border-2 bg-blue-500 p-2 text-center text-xl font-medium focus:border-white focus:outline-none md:h-52 xl:h-52 xl:w-full"
             placeholder="Deixe aqui sua mensagem"
             required
           ></textarea>
@@ -715,14 +655,14 @@
 
           <button
             id="btnEnviarMsg"
-            class="btn-enviar h-8 cursor-pointer rounded-md bg-green-600 text-xl font-semibold duration-300 hover:scale-90 hover:bg-green-800 md:h-10 xl:h-10 xl:w-full"
+            class="btn-enviar invisible h-8 cursor-pointer rounded-md bg-green-600 text-xl font-semibold duration-300 hover:scale-90 hover:bg-green-800 md:h-10 xl:h-10 xl:w-full"
             type="submit"
           >
             Enviar
           </button>
         </form>
 
-        <div class="line-final flex flex-row items-center gap-3">
+        <div class="line-final invisible flex flex-row items-center gap-3">
           <div
             class="h-[0.3px] w-[140px] bg-white md:w-[250px] xl:w-[225px]"
           ></div>
@@ -736,7 +676,7 @@
           class="cards-btn flex flex-col items-center justify-center gap-3 md:flex-row lg:flex-row xl:flex-row xl:gap-5"
         >
           <button
-            class="card-btn cursor-pointer rounded-md border-2 border-pink-600 p-2 text-xl font-semibold text-pink-600 duration-300 hover:bg-pink-600 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
+            class="card-btn-1 invisible cursor-pointer rounded-md border-2 border-pink-600 p-2 text-xl font-semibold text-pink-600 duration-300 hover:bg-pink-600 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
           >
             <a href="https://www.instagram.com/lucas_henrib/" target="_blank">
               <i class="fa-brands fa-instagram text-2xl"></i>
@@ -745,7 +685,7 @@
           </button>
 
           <button
-            class="border-ttblue card-btn w-[144px] cursor-pointer rounded-md border-2 p-2 text-xl font-semibold text-blue-700 duration-300 hover:bg-blue-700 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
+            class="border-ttblue card-btn-2 invisible w-[144px] cursor-pointer rounded-md border-2 border-blue-700 p-2 text-xl font-semibold text-blue-700 duration-300 hover:bg-blue-700 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
           >
             <a
               href="https://www.linkedin.com/in/lucas-henrique-borges/"
@@ -757,7 +697,7 @@
           </button>
 
           <button
-            class="card-btn cursor-pointer rounded-md border-2 border-green-500 p-2 text-xl font-semibold text-green-500 duration-300 hover:bg-green-500 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44"
+            class="card-btn-3 invisible cursor-pointer rounded-md border-2 border-green-500 p-2 text-xl font-semibold text-green-500 duration-300 hover:bg-green-500 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44"
           >
             <a
               href="https://wa.me/5534998201646?text=Olá,%20vim%20atraves%20do%20seu%20portfolio."
@@ -780,7 +720,7 @@
       </section>
     </main>
 
-    <footer class="flex flex-col items-center justify-center bg-sky-950">
+    <footer class="flex flex-col items-center justify-center bg-slate-900">
       <img
         src="./assets/devlukinha.png"
         alt="logo-devukinha"
