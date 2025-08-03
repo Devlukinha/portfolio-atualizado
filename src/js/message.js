@@ -20,20 +20,5 @@ enviarMsg.addEventListener("click", () => {
         padding: "12px 20px",
       },
     }).showToast();
-  } else {
-    Toastify({
-      text: "Preencha corretamente os campos do formulário!",
-      duration: 3000,
-      close: true,
-      gravity: "top",
-      position: "center",
-      stopOnFocus: true,
-      style: {
-        background: "#ef4444",
-        fontWeight: 700,
-        color: "white",
-        padding: "12px 20px",
-      },
-    }).showToast();
   }
 });
