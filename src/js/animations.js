@@ -41,20 +41,20 @@ revelar.reveal('.btn-contato', {
 revelar.reveal('.foto-perfil', {
   origin: 'left',
   duration: 1000,
+  delay: 500,
   distance: '90px',
 });
 
 revelar.reveal('.title-sobre', {
   origin: 'rigth',
   duration: 1000,
-  delay: 500,
   distance: '90px',
 });
 
 revelar.reveal('.paragrafo-sobre', {
   origin: 'rigth',
   duration: 1000,
-  delay: 700,
+  delay: 600,
   distance: '90px',
 });
 
@@ -63,6 +63,7 @@ revelar.reveal('.paragrafo-sobre', {
 revelar.reveal('.title-skills', {
   origin: 'top',
   duration: 800,
+  delay: 800,
   distance: '90px',
 });
 
@@ -245,6 +246,7 @@ revelar.reveal('.paragrafo-contato', {
   distance: '90px',
 });
 
+/*
 revelar.reveal('.label-1', {
   origin: 'rigth',
   duration: 1000,
@@ -301,11 +303,12 @@ revelar.reveal('.line-final', {
   delay: 2200,
   distance: '60px',
 });
+*/
 
 revelar.reveal('.card-btn-1', {
   origin: 'left',
   duration: 1000,
-  delay: 2600,
+  delay: 600,
   distance: '90px',
   reset: true
 });
@@ -313,7 +316,7 @@ revelar.reveal('.card-btn-1', {
 revelar.reveal('.card-btn-2', {
   origin: 'left',
   duration: 1000,
-  delay: 2800,
+  delay: 800,
   distance: '90px',
   reset: true
 });
@@ -321,7 +324,7 @@ revelar.reveal('.card-btn-2', {
 revelar.reveal('.card-btn-3', {
   origin: 'left',
   duration: 1000,
-  delay: 3000,
+  delay: 1000,
   distance: '90px',
   reset: true
 });
@@ -329,7 +332,7 @@ revelar.reveal('.card-btn-3', {
 revelar.reveal('.btn-topo', {
   origin: 'bottom',
   duration: 1000,
-  delay: 3000,
+  delay: 1200,
   distance: '90px',
   reset: true
 });
