@@ -1,3 +1,4 @@
+
 window.revelar = ScrollReveal({reset: true})
 
 //home do site 
