@@ -225,12 +225,7 @@ revelar.reveal('.card-projeto-3', {
   distance: '90px',
 });
 
-revelar.reveal('.container-git', {
-  origin: 'bottom',
-  duration: 1000,
-  delay: 1000,
-  distance: '90px',
-});
+
 
 
 //Sessao Contato 
