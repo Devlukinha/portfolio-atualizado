@@ -339,8 +339,17 @@
   .h-\[910px\] {
     height: 910px;
   }
+  .h-\[1000px\] {
+    height: 1000px;
+  }
   .h-\[1120px\] {
     height: 1120px;
+  }
+  .h-\[1200px\] {
+    height: 1200px;
+  }
+  .h-\[1600px\] {
+    height: 1600px;
   }
   .h-full {
     height: 100%;
@@ -1268,6 +1277,11 @@
       height: calc(var(--spacing) * 12);
     }
   }
+  .lg\:h-\[0px\] {
+    @media (width >= 64rem) {
+      height: 0px;
+    }
+  }
   .lg\:h-\[30px\] {
     @media (width >= 64rem) {
       height: 30px;
@@ -1276,6 +1290,11 @@
   .lg\:h-\[100vh\] {
     @media (width >= 64rem) {
       height: 100vh;
+    }
+  }
+  .lg\:h-\[101vh\] {
+    @media (width >= 64rem) {
+      height: 101vh;
     }
   }
   .lg\:h-\[200px\] {
@@ -1318,6 +1337,11 @@
       height: 580px;
     }
   }
+  .lg\:h-\[600px\] {
+    @media (width >= 64rem) {
+      height: 600px;
+    }
+  }
   .lg\:h-\[670px\] {
     @media (width >= 64rem) {
       height: 670px;
@@ -1331,6 +1355,21 @@
   .lg\:h-\[690px\] {
     @media (width >= 64rem) {
       height: 690px;
+    }
+  }
+  .lg\:h-\[750px\] {
+    @media (width >= 64rem) {
+      height: 750px;
+    }
+  }
+  .lg\:h-\[800px\] {
+    @media (width >= 64rem) {
+      height: 800px;
+    }
+  }
+  .lg\:h-\[900px\] {
+    @media (width >= 64rem) {
+      height: 900px;
     }
   }
   .lg\:h-\[990px\] {
@@ -1599,6 +1638,12 @@
     @media (width >= 64rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .lg\:text-4xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
   }
   .lg\:text-5xl {
@@ -1948,10 +1993,22 @@
       text-align: center;
     }
   }
+  .\32 xl\:text-2xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .\32 xl\:text-3xl {
     @media (width >= 96rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .\32 xl\:text-6xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-6xl);
+      line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
   .\32 xl\:text-7xl {
@@ -1964,6 +2021,14 @@
     @media (width >= 96rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .\32 xl\:xl\:text-2xl {
+    @media (width >= 96rem) {
+      @media (width >= 80rem) {
+        font-size: var(--text-2xl);
+        line-height: var(--tw-leading, var(--text-2xl--line-height));
+      }
     }
   }
 }

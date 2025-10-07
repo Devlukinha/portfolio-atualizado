@@ -242,7 +242,7 @@ revelar.reveal('.paragrafo-contato', {
   distance: '90px',
 });
 
-/*
+
 revelar.reveal('.label-1', {
   origin: 'rigth',
   duration: 1000,
@@ -299,7 +299,7 @@ revelar.reveal('.line-final', {
   delay: 2200,
   distance: '60px',
 });
-*/
+
 
 revelar.reveal('.card-btn-1', {
   origin: 'left',
