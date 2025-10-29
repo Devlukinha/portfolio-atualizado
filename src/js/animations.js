@@ -1,5 +1,5 @@
 
-window.revelar = ScrollReveal({reset: true})
+window.revelar = ScrollReveal({reset: false})
 
 //home do site 
 revelar.reveal('.frase-desktop', {
