@@ -1,0 +1,139 @@
+<section
+        class="bg-blue-950 flex h-[1550px] flex-col items-center gap-7 md:h-[1150px] lg:h-[1200px] xl:h-[1220px]"
+        id="contato"
+      >
+        <h1
+          class="title-contato invisible mt-20 text-center text-3xl font-bold text-white lg:mt-40 lg:text-6xl"
+        >
+          VAMOS TROCAR UMA IDEIA?
+        </h1>
+        <p
+          class="paragrafo-contato invisible w-[300px] lg:mt-7 text-center indent-3 text-xl leading-8 text-white md:mb-12 md:w-[580px] lg:w-[1500px] lg:text-center lg:text-3xl"
+        >
+          Fique à vontade para entrar em
+          contato! Vou ficar muito feliz em te responder :)
+        </p>
+
+        <form
+          action="https://formsubmit.co/lucashenrique030407@gmail.com"
+          method="POST"
+          id="formulario"
+          class="flex w-[340px] flex-col justify-center p-2 gap-3 xl:min-w-[550px]"
+        >
+          <label
+            for="nome"
+            class="label-1 invisible text-start text-xl font-semibold text-white"
+            >NOME:</label
+          >
+          <input
+            type="text"
+            name="nome"
+            placeholder="Digite seu nome aqui"
+            required
+            id="nome"
+            class="text-dark-blue border-none input-1 h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full invisible"
+          />
+
+          <label
+            for="email"
+            class="label-2  text-start text-xl font-semibold text-white invisible"
+            >EMAIL:</label
+          >
+          <input
+            type="email"
+            name="email"
+            placeholder="Digite seu email aqui"
+            required
+            id="email"
+            class="text-dark-blue border-none input-2  h-12 rounded-md border-2 bg-blue-500 text-center text-xl font-medium focus:border-white focus:outline-none md:h-12 xl:h-14 xl:w-full invisible"
+          />
+
+          <label for="assunto" class="label-3  text-xl font-semibold text-white"
+            >ASSUNTO:</label
+          >
+          <textarea
+            name="mensagem"
+            id="assunto"
+            class="text-dark-blue border-none input-3  h-48 resize-none rounded-md border-2 bg-blue-500 p-2 text-center text-xl font-medium focus:border-white focus:outline-none md:h-52 xl:h-52 xl:w-full invisible"
+            required
+            placeholder="Deixe aqui sua mensagem"
+          ></textarea>
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://devlukinha.github.io/mess/"
+          />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Mensagem vinda do seu Portfólio"
+          />
+
+          <button
+            id="btnEnviarMsg"
+            class="btn-enviar  h-12 w-32 cursor-pointer rounded-md bg-green-600 text-xl font-semibold duration-300 hover:scale-90 hover:bg-green-800 md:h-10 xl:h-10 xl:w-full self-center"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </form> 
+
+        <div class="line-final  flex flex-row items-center gap-3">
+          <div
+            class="h-[0.3px] w-[140px] bg-white md:w-[250px] xl:w-[225px]"
+          ></div>
+          <p class="text-2xl font-semibold text-white">Ou</p>
+          <div
+            class="h-[0.3px] w-[140px] bg-white md:w-[250px] xl:w-[225px]"
+          ></div>
+        </div> 
+
+        
+        <div
+          class="cards-btn flex flex-col items-center justify-center gap-3 md:flex-row lg:flex-row xl:flex-row xl:gap-5"
+        >
+          <button
+            class="card-btn-1 invisible cursor-pointer rounded-md border-2 border-pink-600 p-2 text-xl font-semibold text-pink-600 duration-300 hover:bg-pink-600 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
+          >
+            <a href="https://www.instagram.com/lucas_henrib/" target="_blank">
+              <i class="fa-brands fa-instagram text-2xl"></i>
+              <span class="text-white">Instagram</span>
+            </a>
+          </button>
+
+          <button
+            class="border-ttblue card-btn-2 invisible w-[144px] cursor-pointer rounded-md border-2 border-blue-700 p-2 text-xl font-semibold text-blue-700 duration-300 hover:bg-blue-700 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44 xl:w-44"
+          >
+            <a
+              href="https://www.linkedin.com/in/lucas-henrique-borges/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin text-2xl"></i>
+              <span class="text-white">Linkedin</span>
+            </a>
+          </button>
+
+          <button
+            class="card-btn-3 invisible cursor-pointer rounded-md border-2 border-green-500 p-2 text-xl font-semibold text-green-500 duration-300 hover:bg-green-500 hover:text-white md:h-12 md:w-44 lg:h-12 lg:w-44"
+          >
+            <a
+              href="https://wa.me/5534998201646?text=Olá,%20vim%20atraves%20do%20seu%20portfolio."
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span class="text-white">Whatsapp</span>
+            </a>
+          </button>
+        </div>
+
+        <button
+          class="btn-topo mt-3 cursor-pointer rounded-md border-2 border-green-600 p-2 text-xl font-semibold text-green-500 duration-300 hover:bg-green-600 hover:text-white md:mt-10 md:h-12 md:w-44  lg:mt-16 lg:h-12 lg:w-44 xl:mt-16 mb-3"
+        >
+          <a href="#topo">
+            <span class="text-white">Voltar ao topo</span>
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </button>
+      </section>
